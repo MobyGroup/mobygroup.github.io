@@ -1,7 +1,9 @@
 (function ($) {
 	var datepickerOpts = {
 		format: "d M yyyy",
-	    todayBtn: "linked"
+	    todayBtn: "linked",
+	    autoclose: true,
+		todayHighlight: true
 	}
 	$(document).ready(function () {
 		$('.datepicker').datepicker(datepickerOpts);
