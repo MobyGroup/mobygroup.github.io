@@ -1,9 +1,17 @@
 (function ($) {
+	var datepickerOpts = {
+		format: "d M yyyy",
+	    todayBtn: "linked"
+	}
+	$(document).ready(function () {
+		$('.datepicker').datepicker(datepickerOpts);
+	});
+
 	$(document).delegate('textarea.adjheight', 'keyup', function() {
 		defautlHeight = 90;
 		this.style.height = defautlHeight + 'px';
 		this.style.height = (this.scrollHeight) + 'px';
-	})
+	});
 
 	// ++++++++++++++++++++++
 	// + Templates generators
@@ -121,6 +129,7 @@
 		var temp = _.template($('#card_temp').html().replace(/&lt;/g, '<').replace(/&gt;/g, '>'));
 		$('#cards').html($('#cards').html() + temp({data: cardData}));
 		$('#cards').show();
+		$('.datepicker').datepicker(datepickerOpts);
 	}
 	// - Template generators
 	// ---------------------

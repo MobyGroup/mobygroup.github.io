@@ -97,7 +97,7 @@ aside {
       aside .card .requirements p {
         padding: 5px; }
         aside .card .requirements p span {
-          font-weight: bold; }
+          font-style: italic; }
       aside .card .requirements .label, aside .card .requirements .field {
         width: 585px;
         padding: 5px;
@@ -129,12 +129,14 @@ aside {
 
   aside {
     display: block;
+    position: relative;
     float: none;
     width: 100%; }
     aside .card {
       float: none;
+      position: relative;
       width: 600px;
-      margin: 0 auto;
+      margin: 5px auto;
       page-break-inside: avoid; } }
 
 /*# sourceMappingURL=style.css.map */
