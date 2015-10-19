@@ -1,0 +1,128 @@
+{
+	"channels": {
+		"FARSI1" : {
+			"langs" : ["fa", "en"],
+			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+		},
+		"TOLO TV" : {
+			"langs" : ["fa", "ps", "en"],
+			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+		},
+		"Lemar TV" : {
+			"langs" : ["fa", "ps", "en"],
+			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+		},
+		"LANA TV" : {
+			"langs" : ["ar", "en"],
+			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+		},
+		"Arman FM" : {
+			"langs" : ["fa", "ps", "en"],
+			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+		},
+		"Arakozia FM" : {
+			"langs" : ["fa", "ps", "en"],
+			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+		},
+		"AfghanStar" : {
+			"langs" : ["fa", "ps", "en"],
+			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+		},
+		"RAPL" : {
+			"langs" : ["fa", "ps", "en"],
+			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+		},
+		"Kana" : {
+			"langs" : ["am", "en"],
+			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+		},
+		"SuperStar" : {
+			"langs" : ["fa", "ps", "en"],
+			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+		},
+		"TOLOnews" : {
+			"langs" : ["fa", "ps", "en"],
+			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+		},
+		"Barbud" : {
+			"langs" : ["fa", "ps", "en"],
+			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+		},
+		"Isaar" : {
+			"langs" : ["fa", "ps", "en"],
+			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+		},
+		"AfghanScene" : {
+			"langs" : ["en"],
+			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+		},
+		"101 India" : {
+			"langs" : ["en"],
+			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+		}
+	},
+
+	"langs" : {
+		"en": "English",
+		"fa": "Farsi / Dari",
+		"ps": "Pashto",
+		"am": "Amharic",
+		"ar": "Arabic"
+	},
+
+	"socialmedia" : {
+		"facebook" : {
+			"title" : "Facebook",
+			"imagetypes" : {
+				"image": "1800x1800",
+				"banner": "1920x711",
+				"profile": "1200x1200"
+			}
+		},
+		"twitter" : {
+			"title" : "Twitter",
+			"imagetypes" : {
+				"image": "1024x512",
+				"banner": "1500x500",
+				"profile": "1200x1200"
+			}
+		},
+		"googleplus" : {
+			"title" : "Google +",
+			"imagetypes" : {
+				"image": "",
+				"banner": "2120x1992",
+				"profile": "1200x1200"
+			}
+		},
+		"youtube" : {
+			"title" : "Youtube",
+			"imagetypes" : {
+				"banner": "2120x1193",
+				"profile": "1200x1200"
+			}
+		},
+		"instagram" : {
+			"title" : "Instagram",
+			"imagetypes" : {
+				"image": "1800x1800",
+				"profile": "1200x1200"
+			}
+		}
+	},
+
+	"imagetypes" : {
+		"image" : {
+			"title": "Image",
+			"value": "an image"
+		},
+		"banner" : {
+			"title": "Banner",
+			"value": "a banner"
+		},
+		"profile" : {
+			"title": "Profile Picture",
+			"value": "a profile picture"
+		}
+	}
+}

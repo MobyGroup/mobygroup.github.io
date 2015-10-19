@@ -1,0 +1,147 @@
+$border_width: 1px
+$border: solid $border_width black
+$heading_highlight: grey
+$heading_text_color: white
+$input_highlight: #F4F4F4
+$total_width: 600px
+$cell_height: 30px
+$vgutter: 10px
+$gutter: 5px
+
+=input()
+	width: 100%
+	height: 100%
+	min-height: $cell_height
+	background: $input_highlight
+	border: none
+	outline: none
+	font-size: inherit
+	display: block
+
+body
+	padding: 0
+	margin: 0
+
+main
+	float: left
+	font-family: Arial
+	margin: $vgutter
+
+h1
+	background: $heading_highlight
+	color: $heading_text_color
+	text-align: center
+	margin: 0
+	padding: $vgutter
+	border: $border
+
+section
+	padding-top: $vgutter * 2
+	border: $border
+	overflow: hidden
+
+.hidden, .templates
+	display: none
+
+.head
+	> div
+		overflow: hidden
+		clear: both
+
+	.label
+		padding: $gutter
+		width: (($total_width - ($gutter * 8)) / 4) - $border_width
+		height: $cell_height
+		float: left
+
+	.field
+		@extend .label
+		background: $input_highlight
+
+		input, input:focus
+			+input
+
+.requirements
+	> div
+		margin: $vgutter 0
+		overflow: hidden
+		clear: both
+
+	.label
+		padding: $gutter
+		width: (($total_width - ($gutter * 8)) / 4)
+		min-height: $cell_height
+		float: left
+
+	.field
+		@extend .label
+		width: ((($total_width - ($gutter * 4)) / 4) * 3)
+		background: $input_highlight
+
+		label, select
+			+input
+			margin-top: $vgutter / 2
+
+		button
+			+input
+			border: solid 1px grey
+		button:focus
+			border: $border
+		button:active
+			background: hsl(180, 0%, 90%)
+		button:disabled
+			border-color: lightgrey
+			color: lightgrey
+
+aside
+	display: block
+	float: left
+	margin: $vgutter
+
+	.card
+		border: $border
+		overflow: hidden
+		margin-bottom: 10px
+
+		.requirements
+			width: $total_width - $gutter
+			overflow: hidden
+
+			p
+				padding: $gutter
+
+				span
+					font-weight: bold
+
+			.label
+				width: $total_width - ($gutter * 3)
+				padding: $gutter
+				margin: 0
+
+			.field
+				width: $total_width - ($gutter * 3)
+				padding: $gutter
+
+				textarea
+					+input
+					width: 100%
+					height: $cell_height * 3
+					overflow: hidden
+					margin: 0
+					padding: 0
+
+@media print
+	main
+		display: none
+	.templates
+		display: none
+	aside
+		display: block
+		float: none
+		width: 100%
+
+		.card
+			float: none
+			width: $total_width
+			margin: 0 auto
+			page-break-inside: avoid

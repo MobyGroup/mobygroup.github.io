@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Social Media Request Form</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="jquery-2.1.4.min.js"></script>
+	<script src="underscore-min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<main>
+		<header><h1><label>Social Media Request Form</label></h1></header>
+		<section>
+			<form>
+				<div class="head">
+					<div>
+						<div class="label"><label for="requestby">Requested by</label></div>
+						<div class="label"><label for="requestto">Request for</label></div>
+						<div class="label"><label for="date">Date</label></div>
+						<div class="label"><label for="deadline">Deadline</label></div>
+					</div>
+					<div>
+						<div class="field"><input id="requestby" name="requestby" type="text"></div>
+						<div class="field"><input id="requestto" name="requestto" type="text"></div>
+						<div class="field"><input id="date" name="date" type="text" class="date"></div>
+						<div class="field"><input id="deadline" name="deadline" type="text" class="date"></div>
+					</div>
+				</div>
+				<div class="requirements">
+					<div id="channels" class="hidden"></div>
+					<div id="langs" class="hidden"></div>
+					<div id="socialmedia" class="hidden"></div>
+					<div id="imagetype" class="hidden"></div>
+					<div>
+						<div class="label"></div>
+						<div class="field"><button id="gencards" disabled>Generate Request Cards</button></div>
+					</div>
+				</div>
+			</form>
+		</section>
+	</main>
+
+	<!-- Printable cards -->
+	<aside>
+		<a name="cards"></a>
+		<div id="cards" class="hidden"></div>
+	</aside>
+
+	<!-- + Templates -->
+	<div class="templates">
+		<div id="channels_temp">
+			<div class="label"><label for="channel">Channel</label></div>
+			<div class="field">
+				<select name="channels">
+					<option value="">Select a channel</option>
+					<%
+					channels.forEach(function (channel) {
+						print('<option value="', channel, '">', channel, '</option>');
+					});
+					%>
+				</select>
+			</div>
+		</div>
+		<div id="langs_temp">
+			<div class="label"><label for="language">Languages</label></div>
+			<div class="field">
+				<%
+				langs.forEach(function (lang) {
+					print('<label><input type="checkbox" name="langs" id="', lang[0],'" value="', lang[0], '">  ', lang[1], '</input></label>');
+				});
+				%>
+			</div>
+		</div>
+		<div id="socialmedia_temp">
+			<div class="label"><label for="socialmedia">Social Media</label></div>
+			<div class="field">
+				<%
+				socialmedia.forEach(function (sm) {
+					print('<label><input type="checkbox" name="socialmedia" id="', sm[0],'" value="', sm[0], '">  ', sm[1], '</input></label>');
+				});
+				%>
+			</div>
+		</div>
+		<div id="imagetypes_temp">
+			<div class="label"><label for="imagetype">Image Types</label></div>
+			<div class="field">
+				<%
+				imagetypes.forEach(function (it) {
+					print('<label><input type="checkbox" name="imagetypes" id="', it[0], '" value="', it[0], '">  ', it[1], '</input></label>');
+				});
+				%>
+			</div>
+		</div>
+
+		<div id="card_temp">
+			<div class="card">
+				<div class="head">
+					<div>
+						<div class="label"><label for="requestby">Requested by</label></div>
+						<div class="label"><label for="requestto">Request for</label></div>
+						<div class="label"><label for="date">Date</label></div>
+						<div class="label"><label for="deadline">Deadline</label></div>
+					</div>
+					<div>
+						<div class="field"><input type="text" value="<%= data.requestby %>"></div>
+						<div class="field"><input type="text" value="<%= data.requestto %>"></div>
+						<div class="field"><input type="text" class="date" value="<%= data.date %>"></div>
+						<div class="field"><input type="text" class="date" value="<%= data.deadline %>"></div>
+					</div>
+				</div>
+				<div class="requirements">
+					<p>Request for <span><%= data.imagetype %></span> for <span><%= data.channel %></span> in <span><%= data.lang %></span>,
+						using the resolution of <span><%= data.resolution %></span>.</p>
+						<div class="label">Description</div>
+						<div class="field"><textarea class="adjheight"></textarea></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- - Templates -->
+</body>
+</html>

@@ -1,0 +1,140 @@
+body {
+  padding: 0;
+  margin: 0; }
+
+main {
+  float: left;
+  font-family: Arial;
+  margin: 10px; }
+
+h1 {
+  background: grey;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  border: solid 1px black; }
+
+section {
+  padding-top: 20px;
+  border: solid 1px black;
+  overflow: hidden; }
+
+.hidden, .templates {
+  display: none; }
+
+.head > div {
+  overflow: hidden;
+  clear: both; }
+.head .label, .head .field {
+  padding: 5px;
+  width: 139px;
+  height: 30px;
+  float: left; }
+.head .field {
+  background: #F4F4F4; }
+  .head .field input, .head .field input:focus {
+    width: 100%;
+    height: 100%;
+    min-height: 30px;
+    background: #F4F4F4;
+    border: none;
+    outline: none;
+    font-size: inherit;
+    display: block; }
+
+.requirements > div {
+  margin: 10px 0;
+  overflow: hidden;
+  clear: both; }
+.requirements .label, .requirements .field {
+  padding: 5px;
+  width: 140px;
+  min-height: 30px;
+  float: left; }
+.requirements .field {
+  width: 435px;
+  background: #F4F4F4; }
+  .requirements .field label, .requirements .field select {
+    width: 100%;
+    height: 100%;
+    min-height: 30px;
+    background: #F4F4F4;
+    border: none;
+    outline: none;
+    font-size: inherit;
+    display: block;
+    margin-top: 5px; }
+  .requirements .field button {
+    width: 100%;
+    height: 100%;
+    min-height: 30px;
+    background: #F4F4F4;
+    border: none;
+    outline: none;
+    font-size: inherit;
+    display: block;
+    border: solid 1px grey; }
+  .requirements .field button:focus {
+    border: solid 1px black; }
+  .requirements .field button:active {
+    background: #e6e6e6; }
+  .requirements .field button:disabled {
+    border-color: lightgrey;
+    color: lightgrey; }
+
+aside {
+  display: block;
+  float: left;
+  margin: 10px; }
+  aside .card {
+    border: solid 1px black;
+    overflow: hidden;
+    margin-bottom: 10px; }
+    aside .card .requirements {
+      width: 595px;
+      overflow: hidden; }
+      aside .card .requirements p {
+        padding: 5px; }
+        aside .card .requirements p span {
+          font-weight: bold; }
+      aside .card .requirements .label, aside .card .requirements .field {
+        width: 585px;
+        padding: 5px;
+        margin: 0; }
+      aside .card .requirements .field {
+        width: 585px;
+        padding: 5px; }
+        aside .card .requirements .field textarea {
+          width: 100%;
+          height: 100%;
+          min-height: 30px;
+          background: #F4F4F4;
+          border: none;
+          outline: none;
+          font-size: inherit;
+          display: block;
+          width: 100%;
+          height: 90px;
+          overflow: hidden;
+          margin: 0;
+          padding: 0; }
+
+@media print {
+  main {
+    display: none; }
+
+  .templates {
+    display: none; }
+
+  aside {
+    display: block;
+    float: none;
+    width: 100%; }
+    aside .card {
+      float: none;
+      width: 600px;
+      margin: 0 auto;
+      page-break-inside: avoid; } }
+
+/*# sourceMappingURL=style.css.map */
