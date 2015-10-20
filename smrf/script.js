@@ -10,9 +10,24 @@
 	});
 
 	$(document).delegate('textarea.adjheight', 'keyup', function() {
-		defautlHeight = 90;
+		defautlHeight = 60;
 		this.style.height = defautlHeight + 'px';
 		this.style.height = (this.scrollHeight) + 'px';
+	});
+
+	$(document).delegate('.card .head .data', 'click', function() {
+		$(this).hide();
+		$(this).next('input').css('display', 'inline-block').focus().select().keyup(function(e) {
+			if (e.keyCode == 13) $(this).trigger('focusout');
+		});
+	});
+	$(document).delegate('.card .head input', 'focusout', function() {
+		$(this).css('display', 'none');
+		thisObj = $(this);
+		thisObj.prev('.data').html(thisObj.val().trim().length == 0 ? '_' : thisObj.val()).show();
+		$(this).change(function() {
+			thisObj.prev('.data').html(thisObj.val().trim().length == 0 ? '_' : thisObj.val());
+		});
 	});
 
 	// ++++++++++++++++++++++
@@ -126,12 +141,14 @@
 	function tempCard(cardData) {
 		if (cardData.length == 0) {
 			$('#cards').hide().html('');
+			$('#printcards').hide();
 			return false;
 		}
 		var temp = _.template($('#card_temp').html().replace(/&lt;/g, '<').replace(/&gt;/g, '>'));
 		$('#cards').html($('#cards').html() + temp({data: cardData}));
 		$('#cards').show();
 		$('.datepicker').datepicker(datepickerOpts);
+		$('#printcards').show();
 	}
 	// - Template generators
 	// ---------------------
@@ -179,14 +196,14 @@
 					for (i4 = 0; i4 < data.imagetypes.length; i4++) {
 						if (!channelsMap.socialmedia[data.socialmedia[i3]].imagetypes.hasOwnProperty(data.imagetypes[i4])) break;
 						cardsData.push({
-							'requestby': data.requestby[0],
-							'requestto': data.requestto[0],
-							'date': data.date[0],
-							'deadline': data.deadline[0],
+							'requestby': $.trim(data.requestby[0]).length == 0 ? '_' : data.requestby[0],
+							'requestto': $.trim(data.requestto[0]).length == 0 ? '_' : data.requestto[0],
+							'date': $.trim(data.date[0]).length == 0 ? '_' : data.date[0],
+							'deadline': $.trim(data.deadline[0]).length == 0 ? '_': data.deadline[0],
 							'channel': data.channels[i1],
 							'lang': channelsMap.langs[data.langs[i2]],
 							'socialmedia': channelsMap.socialmedia[data.socialmedia[i3]].title,
-							'imagetype': channelsMap.imagetypes[data.imagetypes[i4]].value,
+							'imagetype': channelsMap.imagetypes[data.imagetypes[i4]].title,
 							'resolution': channelsMap.socialmedia[data.socialmedia[i3]].imagetypes[data.imagetypes[i4]]
 						});
 					}

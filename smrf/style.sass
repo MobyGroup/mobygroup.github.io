@@ -10,7 +10,6 @@ $gutter: 5px
 
 =input()
 	width: 100%
-	height: 100%
 	min-height: $cell_height
 	background: $input_highlight
 	border: none
@@ -21,10 +20,10 @@ $gutter: 5px
 body
 	padding: 0
 	margin: 0
+	font-family: Arial
 
 main
 	float: left
-	font-family: Arial
 	margin: $vgutter
 
 h1
@@ -35,10 +34,27 @@ h1
 	padding: $vgutter
 	border: $border
 
+h2
+	@extend h1
+	border: none
+	border-bottom: border
+	font-size: 16px
+
 section
 	padding-top: $vgutter * 2
 	border: $border
 	overflow: hidden
+
+button
+	+input
+	border: solid 1px grey
+button:focus
+	border: $border
+button:active
+	background: hsl(180, 0%, 90%)
+button:disabled
+	border-color: lightgrey
+	color: lightgrey
 
 .hidden, .templates
 	display: none
@@ -82,17 +98,6 @@ section
 			+input
 			margin-top: $vgutter / 2
 
-		button
-			+input
-			border: solid 1px grey
-		button:focus
-			border: $border
-		button:active
-			background: hsl(180, 0%, 90%)
-		button:disabled
-			border-color: lightgrey
-			color: lightgrey
-
 aside
 	display: block
 	float: left
@@ -101,7 +106,26 @@ aside
 	.card
 		border: $border
 		overflow: hidden
-		margin-bottom: 10px
+		margin-bottom: $vgutter
+
+		.head
+			margin: $gutter
+			width: $total_width - ($vgutter * 2)
+			line-height: $cell_height
+
+			.data
+				cursor: text
+				font-style: italic
+				font-weight: bold
+
+			input
+				+input
+				width: $total_width / 4
+				height: $cell_height - 2
+				padding: 0
+				margin: 0
+				font-weight: bold
+				display: none
 
 		.requirements
 			width: $total_width - $gutter
@@ -114,27 +138,31 @@ aside
 					font-style: italic
 
 			.label
-				width: $total_width - ($gutter * 3)
-				padding: $gutter
-				margin: 0
+				width: (($total_width - ($gutter * 4)) / 4) - $gutter
+				margin: $gutter 0
 
 			.field
-				width: $total_width - ($gutter * 3)
-				padding: $gutter
+				width: ((($total_width - ($gutter * 4)) / 4) * 3) - $gutter
+				clear: right
 
 				textarea
 					+input
 					width: 100%
-					height: $cell_height * 3
+					height: $cell_height * 2
 					overflow: hidden
 					margin: 0
 					padding: 0
 
 @media print
+	body
+		-webkit-print-color-adjust: exact
+
 	main
 		display: none
+
 	.templates
 		display: none
+
 	aside
 		display: block
 		position: relative
@@ -147,3 +175,6 @@ aside
 			width: $total_width
 			margin: $gutter auto
 			page-break-inside: avoid
+
+	button
+		visibility: hidden

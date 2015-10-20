@@ -1,13 +1,13 @@
 body {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-family: Arial; }
 
 main {
   float: left;
-  font-family: Arial;
   margin: 10px; }
 
-h1 {
+h1, h2 {
   background: grey;
   color: white;
   text-align: center;
@@ -15,10 +15,35 @@ h1 {
   padding: 10px;
   border: solid 1px black; }
 
+h2 {
+  border: none;
+  border-bottom: border;
+  font-size: 16px; }
+
 section {
   padding-top: 20px;
   border: solid 1px black;
   overflow: hidden; }
+
+button {
+  width: 100%;
+  min-height: 30px;
+  background: #F4F4F4;
+  border: none;
+  outline: none;
+  font-size: inherit;
+  display: block;
+  border: solid 1px grey; }
+
+button:focus {
+  border: solid 1px black; }
+
+button:active {
+  background: #e6e6e6; }
+
+button:disabled {
+  border-color: lightgrey;
+  color: lightgrey; }
 
 .hidden, .templates {
   display: none; }
@@ -35,7 +60,6 @@ section {
   background: #F4F4F4; }
   .head .field input, .head .field input:focus {
     width: 100%;
-    height: 100%;
     min-height: 30px;
     background: #F4F4F4;
     border: none;
@@ -57,7 +81,6 @@ section {
   background: #F4F4F4; }
   .requirements .field label, .requirements .field select {
     width: 100%;
-    height: 100%;
     min-height: 30px;
     background: #F4F4F4;
     border: none;
@@ -65,23 +88,6 @@ section {
     font-size: inherit;
     display: block;
     margin-top: 5px; }
-  .requirements .field button {
-    width: 100%;
-    height: 100%;
-    min-height: 30px;
-    background: #F4F4F4;
-    border: none;
-    outline: none;
-    font-size: inherit;
-    display: block;
-    border: solid 1px grey; }
-  .requirements .field button:focus {
-    border: solid 1px black; }
-  .requirements .field button:active {
-    background: #e6e6e6; }
-  .requirements .field button:disabled {
-    border-color: lightgrey;
-    color: lightgrey; }
 
 aside {
   display: block;
@@ -91,6 +97,28 @@ aside {
     border: solid 1px black;
     overflow: hidden;
     margin-bottom: 10px; }
+    aside .card .head {
+      margin: 5px;
+      width: 580px;
+      line-height: 30px; }
+      aside .card .head .data {
+        cursor: text;
+        font-style: italic;
+        font-weight: bold; }
+      aside .card .head input {
+        width: 100%;
+        min-height: 30px;
+        background: #F4F4F4;
+        border: none;
+        outline: none;
+        font-size: inherit;
+        display: block;
+        width: 150px;
+        height: 28px;
+        padding: 0;
+        margin: 0;
+        font-weight: bold;
+        display: none; }
     aside .card .requirements {
       width: 595px;
       overflow: hidden; }
@@ -99,15 +127,13 @@ aside {
         aside .card .requirements p span {
           font-style: italic; }
       aside .card .requirements .label, aside .card .requirements .field {
-        width: 585px;
-        padding: 5px;
-        margin: 0; }
+        width: 140px;
+        margin: 5px 0; }
       aside .card .requirements .field {
-        width: 585px;
-        padding: 5px; }
+        width: 430px;
+        clear: right; }
         aside .card .requirements .field textarea {
           width: 100%;
-          height: 100%;
           min-height: 30px;
           background: #F4F4F4;
           border: none;
@@ -115,12 +141,15 @@ aside {
           font-size: inherit;
           display: block;
           width: 100%;
-          height: 90px;
+          height: 60px;
           overflow: hidden;
           margin: 0;
           padding: 0; }
 
 @media print {
+  body {
+    -webkit-print-color-adjust: exact; }
+
   main {
     display: none; }
 
@@ -137,6 +166,9 @@ aside {
       position: relative;
       width: 600px;
       margin: 5px auto;
-      page-break-inside: avoid; } }
+      page-break-inside: avoid; }
+
+  button {
+    visibility: hidden; } }
 
 /*# sourceMappingURL=style.css.map */
