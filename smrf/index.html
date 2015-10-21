@@ -99,21 +99,26 @@
 
 		<div id="card_temp">
 			<div class="card">
-				<header><h2><label>Graphic Design Request Card</label></h1></header>
+				<header>
+					<h2>Graphic Design Request Card</h1>
+					<div class="removecard"></div>
+					<div class="icon-socialmedia"><span class="socicon-<%= data.socialmedia_code %>"></span></div>
+				</header>
 				<div class="head">
-					Request from <span class="data"><%= data.requestby %></span><input type="text" value="<%= data.requestby %>">
-					to <span class="data"><%= data.requestto %></span><input type="text" value="<%= data.requestto %>">
-					on <span class="data"><%= data.date %></span><input type="text" class="datepicker" value="<%= data.date %>">
-					To be delivered by <span class="data"><%= data.deadline %></span><input type="text" class="datepicker" value="<%= data.deadline %>">
+					<p>
+						Request from <span class="data"><%= data.requestby %></span><input type="text" value="<%= data.requestby %>">
+						to <span class="data"><%= data.requestto %></span><input type="text" value="<%= data.requestto %>">
+						on <span class="data"><%= data.date %></span><input type="text" class="datepicker" value="<%= data.date %>">
+						To be delivered by <span class="data"><%= data.deadline %></span><input type="text" class="datepicker" value="<%= data.deadline %>">
+					</p>
 				</div>
 				<div class="requirements">
 					<div class="label">Channel</div><div class="field"><%= data.channel %></div>
-					<div class="label">Language</div><div class="field"><%= data.lang %></div>
-					<div class="label">Social Media</div><div class="field"><%= data.socialmedia %></div>
+					<div class="label">Social Media</div><div class="field"><span class="socicon-<%= data.socialmedia_code %>"></span> <%= data.socialmedia %></div>
 					<div class="label">Image type</div><div class="field"><%= data.imagetype %></div>
 					<div class="label">Resoluation</div><div class="field"><%= data.resolution %></div>
-					<div class="label">Description</div>
-					<div class="field"><textarea class="adjheight"></textarea></div>
+					<div class="label">Language</div><div class="field"><%= data.lang %></div>
+					<div class="label">Description</div><div class="field"><textarea class="adjheight"></textarea></div>
 				</div>
 			</div>
 		</div>

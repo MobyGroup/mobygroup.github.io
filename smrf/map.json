@@ -2,63 +2,63 @@
 	"channels": {
 		"FARSI1" : {
 			"langs" : ["fa", "en"],
-			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+			"socialmedia" : ["facebook", "twitter", "google", "youtube", "instagram"]
 		},
 		"TOLO TV" : {
 			"langs" : ["fa", "ps", "en"],
-			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+			"socialmedia" : ["facebook", "twitter", "google", "youtube", "instagram"]
 		},
 		"Lemar TV" : {
 			"langs" : ["fa", "ps", "en"],
-			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+			"socialmedia" : ["facebook", "twitter", "google", "youtube", "instagram"]
 		},
 		"LANA TV" : {
 			"langs" : ["ar", "en"],
-			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+			"socialmedia" : ["facebook", "twitter", "google", "youtube", "instagram"]
 		},
 		"Arman FM" : {
 			"langs" : ["fa", "ps", "en"],
-			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+			"socialmedia" : ["facebook", "twitter", "google", "youtube", "instagram"]
 		},
 		"Arakozia FM" : {
 			"langs" : ["fa", "ps", "en"],
-			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+			"socialmedia" : ["facebook", "twitter", "google", "youtube", "instagram"]
 		},
 		"AfghanStar" : {
 			"langs" : ["fa", "ps", "en"],
-			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+			"socialmedia" : ["facebook", "twitter", "google", "youtube", "instagram"]
 		},
 		"RAPL" : {
 			"langs" : ["fa", "ps", "en"],
-			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+			"socialmedia" : ["facebook", "twitter", "google", "youtube", "instagram"]
 		},
 		"Kana" : {
 			"langs" : ["am", "en"],
-			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+			"socialmedia" : ["facebook", "twitter", "google", "youtube", "instagram"]
 		},
 		"SuperStar" : {
 			"langs" : ["fa", "ps", "en"],
-			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+			"socialmedia" : ["facebook", "twitter", "google", "youtube", "instagram"]
 		},
 		"TOLOnews" : {
 			"langs" : ["fa", "ps", "en"],
-			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+			"socialmedia" : ["facebook", "twitter", "google", "youtube", "instagram"]
 		},
 		"Barbud" : {
 			"langs" : ["fa", "ps", "en"],
-			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+			"socialmedia" : ["facebook", "twitter", "google", "youtube", "instagram"]
 		},
 		"Isaar" : {
 			"langs" : ["fa", "ps", "en"],
-			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+			"socialmedia" : ["facebook", "twitter", "google", "youtube", "instagram"]
 		},
 		"AfghanScene" : {
 			"langs" : ["en"],
-			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+			"socialmedia" : ["facebook", "twitter", "google", "youtube", "instagram"]
 		},
 		"101 India" : {
 			"langs" : ["en"],
-			"socialmedia" : ["facebook", "twitter", "googleplus", "youtube", "instagram"]
+			"socialmedia" : ["facebook", "twitter", "google", "youtube", "instagram"]
 		}
 	},
 
@@ -87,7 +87,7 @@
 				"profile": "1200x1200"
 			}
 		},
-		"googleplus" : {
+		"google" : {
 			"title" : "Google +",
 			"imagetypes" : {
 				"image": "",

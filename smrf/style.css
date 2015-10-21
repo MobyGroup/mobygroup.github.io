@@ -1,3 +1,4 @@
+@import url(socicon-font-v26/socicon.css);
 body {
   padding: 0;
   margin: 0;
@@ -5,7 +6,8 @@ body {
 
 main {
   float: left;
-  margin: 10px; }
+  margin: 10px;
+  border: solid 1px black; }
 
 h1, h2 {
   background: grey;
@@ -13,16 +15,13 @@ h1, h2 {
   text-align: center;
   margin: 0;
   padding: 10px;
-  border: solid 1px black; }
+  border-bottom: solid 1px black; }
 
 h2 {
-  border: none;
-  border-bottom: border;
   font-size: 16px; }
 
 section {
   padding-top: 20px;
-  border: solid 1px black;
   overflow: hidden; }
 
 button {
@@ -57,7 +56,8 @@ button:disabled {
   height: 30px;
   float: left; }
 .head .field {
-  background: #F4F4F4; }
+  background: #F4F4F4;
+  border: solid 1px white; }
   .head .field input, .head .field input:focus {
     width: 100%;
     min-height: 30px;
@@ -74,7 +74,7 @@ button:disabled {
 .requirements .label, .requirements .field {
   padding: 5px;
   width: 140px;
-  min-height: 30px;
+  line-height: 30px;
   float: left; }
 .requirements .field {
   width: 435px;
@@ -87,7 +87,7 @@ button:disabled {
     outline: none;
     font-size: inherit;
     display: block;
-    margin-top: 5px; }
+    margin: 5px 0; }
 
 aside {
   display: block;
@@ -102,7 +102,7 @@ aside {
       width: 580px;
       line-height: 30px; }
       aside .card .head .data {
-        cursor: text;
+        cursor: pointer;
         font-style: italic;
         font-weight: bold; }
       aside .card .head input {
@@ -143,8 +143,32 @@ aside {
           width: 100%;
           height: 60px;
           overflow: hidden;
-          margin: 0;
+          margin: 5px 0;
           padding: 0; }
+    aside .card header {
+      position: relative; }
+      aside .card header .removecard {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 20px;
+        color: white;
+        border: solid 1px white;
+        text-align: center;
+        line-height: 36px;
+        width: 36px;
+        cursor: pointer; }
+      aside .card header .removecard:before {
+        content: "X"; }
+      aside .card header .icon-socialmedia {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        line-height: 36px;
+        width: 36px; }
 
 @media print {
   body {
@@ -167,6 +191,8 @@ aside {
       width: 600px;
       margin: 5px auto;
       page-break-inside: avoid; }
+      aside .card .removecard {
+        display: none; }
 
   button {
     visibility: hidden; } }
