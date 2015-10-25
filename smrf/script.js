@@ -1,4 +1,7 @@
 (function ($) {
+	var configs = {
+		'emptyStrReplacement' : '__'
+	}
 	var datepickerOpts = {
 		format: "d M yyyy",
 	    todayBtn: "linked",
@@ -22,18 +25,18 @@
 		this.style.height = (this.scrollHeight) + 'px';
 	});
 
-	$(document).delegate('.card .head .data', 'click', function() {
+	$(document).delegate('.card .head .data', 'click focus', function() {
 		$(this).hide();
-		$(this).next('input').css('display', 'inline-block').focus().select().keyup(function(e) {
+		$(this).next('input').css('display', 'inline-block').select().keyup(function(e) {
 			if (e.keyCode == 13) $(this).trigger('focusout');
 		});
 	});
 	$(document).delegate('.card .head input', 'focusout', function() {
 		$(this).css('display', 'none');
 		thisObj = $(this);
-		thisObj.prev('.data').html(thisObj.val().trim().length == 0 ? '_' : thisObj.val()).show();
+		thisObj.prev('.data').html(thisObj.val().trim().length == 0 ? configs.emptyStrReplacement : thisObj.val()).show();
 		$(this).change(function() {
-			thisObj.prev('.data').html(thisObj.val().trim().length == 0 ? '_' : thisObj.val());
+			thisObj.prev('.data').html(thisObj.val().trim().length == 0 ? configs.emptyStrReplacement : thisObj.val());
 		});
 	});
 
@@ -175,10 +178,9 @@
 	$(document).delegate('form', 'submit', function(e) {
 		e.preventDefault();
 		if ($('#cards .card').length > 0) {
-			if (!window.confirm('The currently generated cards will be lost.  Are you sure you want to continue generating new cards?')) {
+			if (!window.confirm('You have already generated cards, this might duplicate them, do you want to continue?')) {
 				return false;
 			}
-			tempCard([]);
 		}
 
 		// getting form data
@@ -196,16 +198,17 @@
 		cardsData = [];
 		for (i1 = 0; i1 < data.channels.length; i1++) {
 			for (i2 = 0; i2 < data.langs.length; i2++) {
-				if (channelsMap.channels[data.channels[i1]].langs.indexOf(data.langs[i2]) == -1) break;
+				if (channelsMap.channels[data.channels[i1]].langs.indexOf(data.langs[i2]) == -1) continue;
 				for (i3 = 0; i3 < data.socialmedia.length; i3++) {
-					if (channelsMap.channels[data.channels[i1]].socialmedia.indexOf(data.socialmedia[i3]) == -1) break;
+					if (channelsMap.channels[data.channels[i1]].socialmedia.indexOf(data.socialmedia[i3]) == -1) continue;
 					for (i4 = 0; i4 < data.imagetypes.length; i4++) {
-						if (!channelsMap.socialmedia[data.socialmedia[i3]].imagetypes.hasOwnProperty(data.imagetypes[i4])) break;
+						if (!channelsMap.socialmedia[data.socialmedia[i3]].imagetypes.hasOwnProperty(data.imagetypes[i4])) continue;
 						cardsData.push({
-							'requestby': $.trim(data.requestby[0]).length == 0 ? '_' : data.requestby[0],
-							'requestto': $.trim(data.requestto[0]).length == 0 ? '_' : data.requestto[0],
-							'date': $.trim(data.date[0]).length == 0 ? '_' : data.date[0],
-							'deadline': $.trim(data.deadline[0]).length == 0 ? '_': data.deadline[0],
+							'index' : cardsData.length,
+							'requestby': $.trim(data.requestby[0]).length == 0 ? configs.emptyStrReplacement : data.requestby[0],
+							'requestto': $.trim(data.requestto[0]).length == 0 ? configs.emptyStrReplacement : data.requestto[0],
+							'date': $.trim(data.date[0]).length == 0 ? configs.emptyStrReplacement : data.date[0],
+							'deadline': $.trim(data.deadline[0]).length == 0 ? configs.emptyStrReplacement: data.deadline[0],
 							'channel': data.channels[i1],
 							'lang': channelsMap.langs[data.langs[i2]],
 							'socialmedia_code': data.socialmedia[i3],

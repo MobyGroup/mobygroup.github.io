@@ -90,7 +90,7 @@
 		"google" : {
 			"title" : "Google +",
 			"imagetypes" : {
-				"image": "",
+				"image": "1925x1083",
 				"banner": "2120x1992",
 				"profile": "1200x1200"
 			}
@@ -99,7 +99,8 @@
 			"title" : "Youtube",
 			"imagetypes" : {
 				"banner": "2120x1193",
-				"profile": "1200x1200"
+				"profile": "1200x1200",
+				"thumbnail": "1280x720"
 			}
 		},
 		"instagram" : {
@@ -123,6 +124,10 @@
 		"profile" : {
 			"title": "Profile Picture",
 			"value": "a profile picture"
+		},
+		"thumbnail" : {
+			"title": "Thumbnail",
+			"value": "a thumbnail"
 		}
 	}
 }
