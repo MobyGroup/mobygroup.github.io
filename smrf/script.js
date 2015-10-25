@@ -39,6 +39,15 @@
 			thisObj.prev('.data').html(thisObj.val().trim().length == 0 ? configs.emptyStrReplacement : thisObj.val());
 		});
 	});
+	$(document).delegate('#printcards', 'click', function() {
+		window.print();
+
+		ga('send', {
+			hitType: 'event',
+			eventCategory: 'Cards',
+			eventAction: 'Print'
+		});
+	})
 
 	// ++++++++++++++++++++++
 	// + Templates generators
@@ -159,6 +168,13 @@
 		$('#cards').show();
 		$('.datepicker').datepicker(datepickerOpts);
 		$('#printcards').show();
+
+		ga('send', {
+			hitType: 'event',
+			eventCategory: 'Cards',
+			eventAction: 'Generated',
+			eventLabel: JSON.stringify(cardData)
+		});
 	}
 	// - Template generators
 	// ---------------------
@@ -179,6 +195,12 @@
 		e.preventDefault();
 		if ($('#cards .card').length > 0) {
 			if (!window.confirm('You have already generated cards, this might duplicate them, do you want to continue?')) {
+				ga('send', {
+					hitType: 'event',
+					eventCategory: 'Cards',
+					eventAction: 'Generate',
+					eventLabel: 'Canceled'
+				});
 				return false;
 			}
 		}
@@ -224,5 +246,13 @@
 			tempCard(card);
 		});
 		window.location.href = '#cards';
+
+		ga('send', {
+			hitType: 'event',
+			eventCategory: 'Cards',
+			eventAction: 'Generate',
+			eventLabel: 'Generated cards',
+			eventValue: cardsData.length
+		});
 	});
 }) (jQuery);
