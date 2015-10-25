@@ -127,7 +127,9 @@
 			templatesVars.socialmedia.forEach(function (sm) {
 				imagetypes.push.apply(imagetypes, Object.keys(channelsMap.socialmedia[sm].imagetypes))
 			});
-			tempImagetypes($.unique(imagetypes));
+			tempImagetypes($.grep(imagetypes, function(el, index) {
+				return index == $.inArray(el, imagetypes);
+			}));
 		});
 		repropagateCheckboxes('socialmedia');
 	}
