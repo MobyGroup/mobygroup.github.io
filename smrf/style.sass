@@ -155,6 +155,11 @@ aside
 					margin: $gutter 0
 					padding: 0
 
+				.printable_textarea
+					@extend textarea
+					line-height: normal
+					display: none
+
 		header
 			position: relative
 
@@ -207,6 +212,13 @@ aside
 
 			.removecard
 				display: none
+
+			.requirements
+				.field
+					textarea
+						display: none
+					.printable_textarea
+						display: block
 
 	button
 		visibility: hidden

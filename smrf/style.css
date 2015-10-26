@@ -132,7 +132,7 @@ aside {
       aside .card .requirements .field {
         width: 430px;
         clear: right; }
-        aside .card .requirements .field textarea {
+        aside .card .requirements .field textarea, aside .card .requirements .field .printable_textarea {
           width: 100%;
           min-height: 30px;
           background: #F4F4F4;
@@ -145,6 +145,9 @@ aside {
           overflow: hidden;
           margin: 5px 0;
           padding: 0; }
+        aside .card .requirements .field .printable_textarea {
+          line-height: normal;
+          display: none; }
     aside .card header {
       position: relative; }
       aside .card header .removecard {
@@ -193,6 +196,10 @@ aside {
       page-break-inside: avoid; }
       aside .card .removecard {
         display: none; }
+      aside .card .requirements .field textarea, aside .card .requirements .field .printable_textarea {
+        display: none; }
+      aside .card .requirements .field .printable_textarea {
+        display: block; }
 
   button {
     visibility: hidden; } }

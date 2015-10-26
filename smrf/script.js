@@ -22,7 +22,8 @@
 	$(document).delegate('textarea.adjheight', 'keyup', function() {
 		defautlHeight = 60;
 		this.style.height = defautlHeight + 'px';
-		this.style.height = (this.scrollHeight) + 'px';
+		this.style.height = this.scrollHeight + 'px';
+		$(this).next('.printable_textarea').css('height', this.style.height).html($(this).val().replace(/\n/g, '<br>'));
 	});
 
 	$(document).delegate('.card .head .data', 'click focus', function() {
@@ -109,6 +110,7 @@
 			$('#socialmedia').hide().html('');
 			return false;
 		}
+
 		_socialmedia = [];
 		socialmedia.forEach(function(sm) {
 			_socialmedia.push([sm, channelsMap.socialmedia[sm].title]);
