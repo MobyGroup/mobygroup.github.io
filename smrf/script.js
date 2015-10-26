@@ -166,7 +166,7 @@
 			return false;
 		}
 		var temp = _.template($('#card_temp').html().replace(/&lt;/g, '<').replace(/&gt;/g, '>'));
-		$('#cards').html($('#cards').html() + temp({data: cardData}));
+		$('#cards').append(temp({data: cardData}));
 		$('#cards').show();
 		$('.datepicker').datepicker(datepickerOpts);
 		$('#printcards').show();
