@@ -187,6 +187,19 @@ aside
 				line-height: 36px
 				width: 36px
 
+	.cardview
+		@extend .card
+
+		.head
+			.data
+				cursor: unset
+
+	#cardsfuncs
+		button
+			width: ($total_width / 2) - ($gutter * 2)
+			margin: $gutter
+			float: left
+
 @media print
 	body
 		-webkit-print-color-adjust: exact
