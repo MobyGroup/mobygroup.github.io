@@ -198,7 +198,8 @@
 		ga('send', {
 			hitType: 'event',
 			eventCategory: 'Cards',
-			eventAction: 'Print'
+			eventAction: 'Print',
+			eventValue: $('#cards .card').length
 		});
 	});
 	$(document).delegate('#emailcards', 'click', function() {
@@ -215,6 +216,13 @@
 		subject = 'Graphic Design Request';
 		body = temp({cards: cards});
 		window.location.href = 'mailto:?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
+		ga('send', {
+			hitType: 'event',
+			eventCategory: 'Cards',
+			eventAction: 'Email',
+			eventValue: $('#cards .card').length
+		});
 	});
 
 	$(document).ready(function () {
@@ -228,6 +236,12 @@
 					carddata[key] = atob(carddata[key]).replace(/\n/g, '<br>');
 				});
 				tempCardview(carddata);
+
+				ga('send', {
+					hitType: 'event',
+					eventCategory: 'Cards',
+					eventAction: 'View'
+				});
 				return;
 			}
 		}
