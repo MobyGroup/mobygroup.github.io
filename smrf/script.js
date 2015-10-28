@@ -204,7 +204,12 @@
 	$(document).delegate('#emailcards', 'click', function() {
 		cards = [];
 		$('#cards .card form').each(function() {
-			cards.push(btoa($(this).serialize()));
+			form = this
+			formdata = {}
+			for (i = 0; i < form.length; i++) {
+				formdata[form[i].name] = btoa(form[i].value);
+			}
+			cards.push(btoa(JSON.stringify(formdata)));
 		});
 		temp = _.template($('#cardemail_temp').html().replace(/&lt;/g, '<').replace(/&gt;/g, '>'));
 		subject = 'Graphic Design Request';
@@ -218,9 +223,11 @@
 		if (href.indexOf('?') > -1) {
 			qstr = queryStrToObj(href.substring(href.indexOf('?')+1, href.length));
 			if (qstr.hasOwnProperty('carddata')) {
-				cardData = queryStrToObj(atob(qstr.carddata));
-				console.log(cardData);
-				tempCardview(cardData);
+				carddata = JSON.parse(atob(qstr.carddata));
+				Object.keys(carddata).forEach(function(key) {
+					carddata[key] = atob(carddata[key]).replace(/\n/g, '<br>');
+				});
+				tempCardview(carddata);
 				return;
 			}
 		}
