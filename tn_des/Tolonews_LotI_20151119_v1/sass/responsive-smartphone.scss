@@ -1,0 +1,252 @@
+// -----------------
+// Compass utilities
+// -----------------
+
+// ---------
+// Variables
+// ---------
+
+@import "partials/base";
+@import "partials/mixin";
+@import "responsive-header-smartphone";
+
+// --------
+// Layout
+// --------
+
+.inner-container {
+	padding-right: 14px;
+	padding-left: 14px;
+
+	&.footer-section {
+		padding-right: 14px;
+		padding-left: 14px;
+	}
+}
+.hidden-onmobile {
+	display: none !important;
+}
+.visible-onlymobile {
+	display: block;
+}
+.full-width-col-mobile {
+	margin-right: 0;
+	margin-left: 0;
+	width: 100% !important;
+}
+.one-col, .two-col, .three-col, .four-col {
+	width: 100% !important;
+	margin-right: 0;
+	margin-bottom: 20px;
+}
+.row {
+	margin-bottom: 0;
+}
+.wrapper {
+    margin-top: 0;
+}
+/*********************
+	POST ARTICLE TOLO
+*********************/
+img {
+	max-width: 100%;
+	height: auto;
+}
+.featured {
+	margin-top: 5%;
+}
+.load-more-post {
+	padding: 10px 5px 0;
+	clear: both;
+}
+
+/*article tolonews*/
+.post-tolonews {
+	padding-bottom: 0;
+	margin-bottom: 0;
+
+	.post-date {
+		display: inline;
+	}
+	&.bar-bottom {
+		border-bottom: 0;
+	}
+	.title-article {
+		padding-top: 0;
+	}
+	&.small-column {
+		margin-top: 0;
+		margin-bottom: 0;
+
+		img {
+			width: 100%;
+		}
+		.content-article {
+			padding-left: 0;
+			max-width: 47.1% !important;
+		}
+	}
+	&.vertical-bloc {
+		.content-article {
+			margin: 0;
+		}
+	}
+	.container-image {
+		width: 42% !important;
+		margin-right: 10px;
+		display: inline-block;
+		vertical-align: middle;
+		border: 0 none !important;
+	}
+	.content-article {
+		padding-left: 0;
+		display: inline-block;
+		width: 52.1% !important;
+		vertical-align: middle;
+
+		h3, h4 {
+			font-size: pxtoem(14);
+			font-family: $HelveticaNeueMedium;
+			line-height: normal;
+			display: inline;
+
+			a {
+				color: $grey-dark1;
+			}
+		}
+	}
+}
+.top-post-tolonews {
+	img {
+		width: 100%;
+		height: auto;
+		max-width: 100%;
+	}
+	.post-date {
+		display: inline;
+	}
+}
+
+/*********************
+		WATCH
+*********************/
+.row-watch-tolo {
+	padding-top: 7%;
+
+	.video-thumbnail {
+		margin-bottom: 15px;
+	}
+	.thumbs-watch-tolo {
+		h3 {
+			margin: 2% 0 0 0;
+		}
+	}
+	.content-article {
+		p, .post-date {
+			display: inline;
+		}
+	}
+	.video {
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+/*********************
+		WORLD
+*********************/
+.four-col.twoo-col-ontablets {
+	li {
+		width: 100%;
+
+		&:nth-child(2) {
+			margin-right: 0;
+		}
+	}
+}
+
+/************************************
+		POST FULL WIDTH MOBILE
+************************************/
+.full-width-col-mobile.post {
+	.one-col, .two-col, .three-col, .four-col {
+		width: 100%;
+	}
+}
+.grey-dark.row {
+	margin: 5% 0 11% 0;
+}
+.equal-top-pub {
+	margin-top: 0;
+}
+
+/******************************
+	Weather only MOBILE
+******************************/
+.box-weather {
+	height: 50px;
+	overflow: hidden;
+	margin-top: 0;
+
+	.container-image {
+		text-align: left;
+		height: 50px;
+		width: auto;
+		padding: 0 15px;
+
+		img {
+			width: 40px;
+			position: relative;
+			height: auto;
+			margin-top: 7px;
+		}
+	}
+	.pays-title {
+		display: block;
+		text-align: center;
+		margin-top: -27px;
+	}
+	.value {
+		position: absolute;
+		right: 20px;
+		top: 20px;
+	}
+}
+.content-top-post-tolonews {
+	padding-right: 14px;
+	padding-left: 14px;
+
+	h2 {
+		font-size: pxtoem(20) !important;
+		margin: 10px 0 !important;
+	}
+}
+.news-bar {
+	margin-bottom: 0;
+}
+
+/*******************
+		footer
+*******************/
+footer {
+	.col-newsletter {
+		margin-top: 6%;
+	}
+	.media {
+		text-align: center;
+	}
+	.nav-copyright li {
+		text-align: center;
+
+		&:first-child, &:last-child {
+			text-align: center;
+		}
+		ul {
+			li:after {
+				width: 5px;
+			}
+		}
+	}
+}

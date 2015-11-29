@@ -1,0 +1,111 @@
+/**
+ * @file
+ * Positioning for a responsive layout TOLONEWS.
+ *
+ * Define CSS classes to create a fluid grid layout
+  */
+
+/**
+ * Center the page.
+ *
+ * For screen sizes larger than 990px, prevent excessively long lines of text
+ * by setting a max-width.
+ */
+.inner-container {
+  max-width: 990px;
+  margin: 0 auto;
+}
+
+/* Containers for grid items and flow items. */
+.one-col, .two-col, .three-col, .four-col, .row {
+  clear: none;
+  display: inline;
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 3.03031%;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+.row {
+  margin-right: 0;
+  width: 100%
+}
+.one-col {
+  width: 31.31313%;
+}
+.two-col {
+  width: 65.65656%;
+}
+.three-col, .four-col {
+  width: 100%;
+}
+.three-col .one-col {
+  width: 31.31313%;
+  margin-right: 3.0303%;
+}
+.three-col .two-col {
+  width: 65.65656%;
+  margin-right: 3.0303%;
+}
+.three-col .three-col {
+  width: 100%;
+  margin-right: 0;
+}
+.two-col .one-col {
+  width: 47.6923%;
+  margin-right: 4.61538%;
+}
+.two-col .two-col {
+  width: 100%;
+}
+.one-col .one-col {
+  width: 100%;
+  margin-right: 0;
+}
+.three-col .last-col {
+  margin-right: 0;
+}
+.two-col .last-col {
+  margin-right: 0;
+}
+.one-col .last-col {
+  margin-right: 0;
+}
+.last-col {
+  margin-right: 0;
+}
+.equal-top-first {
+  margin-top: 6%;
+}
+.equal-top {
+  margin-top: 18.8%;
+}
+.equal-top-pub {
+  margin-top: 10%
+}
+.marginRow {
+  margin-bottom: 2.7%;
+}
+.one-col {
+  margin-top: 0.5%;
+}
+.noTopMargin-col {
+  margin-top: 0;
+}
+.four-col .one-col {
+  width: 22.727%;
+  margin-top: 0;
+}
+.four-col .two-col {
+  width: 22.727%;
+}
+.four-col .three-col {
+  width: 22.727%;
+}
+.four-col .four-col {
+  width: 22.727%;
+}
+.right-col {
+  float: right;
+}

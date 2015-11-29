@@ -1,0 +1,88 @@
+@import "compass";
+@import "compass/css3";
+@import "compass/css3/text-shadow";
+@import "compass/css3/transform";
+@import "compass/css3/transition";
+@import "compass/css3/opacity";
+
+/* Activate SVG support for IE 9 and old opera */
+
+$base-font: 16;/* fonts Variables */
+$HelveticaNeue: "HelveticaNeue", Arial, sans-serif;
+$HelveticaNeueBold: "HelveticaNeue-Bold", Arial, sans-serif;
+$HelveticaNeueLight: "HelveticaNeue-Light", Arial, sans-serif;
+$HelveticaNeueMedium: "HelveticaNeue-Medium", Arial, sans-serif;
+$Roboto: "Roboto", Arial, sans-serif;
+// Color variables
+// Buttons
+
+/************************
+         Color
+*************************/
+
+$white: #ffffff;
+/****************************
+				Grey
+****************************/
+$grey-dark1:#18181b;
+$grey-dark3:#8b8b8c;
+$grey-dark4:#525254;
+$grey-light3:#cacacc;
+$grey-light5:#bdbebf;
+$grey-light6:#b8babb;
+/****************************
+				red
+****************************/
+$red: #df2027;
+$red2:#c20b20;
+/****************************
+				blue
+****************************/
+$blue: #0878b7;
+/****************************
+				green
+****************************/
+// Background
+//$black: #010101;
+$grey-light: #e9e9e9;
+$grey-light1:#d4d4d4;
+$grey-light2:#8d8f91;
+$grey-box: #f5f5f5;
+$grey-light4:#cbcbcb;
+$grey-light7:#75797c;
+$grey-dark: #3b3f42;
+$grey-light6:#afb0b1;
+$grey-dark2:#4c4c4d;
+$grey-dark3:#323031;
+$blue1:#43adef;
+$blue-light: #f5fbfe;
+$blue-light2:#d1ebfb;
+$green: #889927;
+$green2:#558f38;
+$green-light: #f9faf4;
+// fonts
+$dark-font: #3d4658;
+$dark-font2:#1d2128;
+$dark-font3:#1c2027;
+$dark-font4:#393d43;
+$dark-font5:#262b35;
+$bleu-font: #1993a8;
+$bleu-font2:#2c394c;
+$average-font: #14768c;
+$light-font: #ffffff;
+$color_error: #d77033;
+$dark-gray: #252a33;
+$dark-gray: #565656;
+$black: #000000;
+// Mega Menu
+// inscription
+$light-grey: #717880;
+// relation
+$light-black: #18191c;
+$light-blue-4:#1995aa;
+$light-blue-5:#00425a;
+$light-blue-6:#37475f;
+$light-blue-7:#d4d4d4;
+// Notification bubble Color
+$notif-red: #d13938;
+$text-rgb: rgba($light-grey, 0.15);

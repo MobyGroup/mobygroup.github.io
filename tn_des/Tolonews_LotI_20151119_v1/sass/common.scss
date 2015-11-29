@@ -1,0 +1,135 @@
+// -----------------
+// Compass utilities
+// -----------------
+
+// ---------
+// Variables
+// ---------
+
+@import "partials/base";
+@import "partials/mixin";
+// --------
+// Partials
+// --------
+@import "partials/reset";
+@import "partials/font";
+@import "layouts/responsive";
+@import "partials/buttons";
+// --------
+// external
+// --------
+@import "external/font-awesome";
+@import "external/uniform";
+// --------
+// Import
+// --------
+@import "layouts/header.scss";
+@import "layouts/footer.scss";
+
+html, html a, button {
+	-webkit-font-smoothing: antialiased;
+	outline: 0 none;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+body {
+	font-family: $HelveticaNeue;
+	font-size: 14px;
+	font-size: pxtoem(14);
+	color: $grey-dark1;
+}
+.row, .inner-container, .clearfix {
+	@include clearfix;
+}
+ul {
+	padding: 0;
+	list-style: none;
+}
+a {
+	color: #18181b;
+	text-decoration: none;
+}
+.wrapper {
+	margin-top: 1.8%;
+}
+
+/************************
+	GOLABL STYLE CLASS
+*************************/
+.visible-onlymobile {
+	display: none;
+}
+.show-in-mobile {
+	display: none;
+}
+.uppercase-txt {
+	text-transform: uppercase;
+}
+.centered {
+	text-align: center;
+}
+.hide {
+	display: none;
+}
+.bold {
+	font-family: $HelveticaNeueBold;
+}
+.grey-light3 {
+	color: #cacacc;
+}
+.one-col h3 {
+	font-family: $HelveticaNeueBold;
+}
+.green-light {
+	background: #f9faf4;
+}
+.grey-light3 {
+	color: $grey-light3;
+}
+.grey-dark4 {
+	color: $grey-dark4;
+}
+.grey-light5 {
+	color: $grey-light5;
+}
+.green {
+	color: $green
+}
+.red {
+	color: $red;
+}
+.line {
+	padding-bottom: 9px;
+}
+.line-red {
+	border-bottom: 2px solid $red;
+}
+.line-grey-dark {
+	border-bottom: 2px solid $grey-dark1;
+}
+.line-grey {
+	border-bottom: 2px solid $grey-light;
+}
+.line-grey2 {
+	border-bottom: 2px solid $grey-light2;
+}
+.line-green {
+	border-bottom: 2px solid $green;
+}
+.line-blue {
+	border-bottom: 2px solid $blue;
+}
+.grey-box {
+	background: $grey-box none repeat scroll 0 0;
+}
+.bar-bottom {
+	border-bottom: 2px solid $grey-light;
+}
+.blue-light {
+	background: $blue-light;
+}
+.blue1 {
+	color: $blue1;
+}
+.grey-dark.row {
+	background: $grey-dark;
+}

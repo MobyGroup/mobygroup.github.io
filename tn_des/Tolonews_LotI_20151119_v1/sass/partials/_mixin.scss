@@ -1,0 +1,46 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  &:before {
+    content: "";
+    display: table;
+  }
+}
+// mixin placeholder
+@mixin placeholder {
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &::-ms-input-placeholder {
+    @content;
+  }
+}
+// mixin placeholder focus
+@mixin placeholder-focus {
+  &:focus:-moz-placeholder {
+    @content;
+  }
+  &:focus::-moz-placeholder {
+    @content;
+  }
+  &:focus::-webkit-input-placeholder {
+    @content;
+  }
+  &:focus:-ms-input-placeholder {
+    @content;
+  }
+}
+
+/* function convert px to em */
+@function pxtoem($var) {
+  @return ($var / $base-font) + rem;
+}

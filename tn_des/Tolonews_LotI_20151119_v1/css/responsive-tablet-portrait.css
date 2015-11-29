@@ -1,0 +1,435 @@
+/* Activate SVG support for IE 9 and old opera */
+/* fonts Variables */
+/************************
+         Color
+*************************/
+/****************************
+				Grey
+****************************/
+/****************************
+				red
+****************************/
+/****************************
+				blue
+****************************/
+/****************************
+				green
+****************************/
+/* function convert px to em */
+/* Activate SVG support for IE 9 and old opera */
+/* fonts Variables */
+/************************
+         Color
+*************************/
+/****************************
+				Grey
+****************************/
+/****************************
+				red
+****************************/
+/****************************
+				blue
+****************************/
+/****************************
+				green
+****************************/
+/* function convert px to em */
+#wrapper {
+  right: 0;
+  position: absolute;
+  transition: right 0.5s ease 0s;
+  width: 100%;
+}
+
+header .navbar-toggle {
+  display: block;
+}
+header .logo {
+  right: inherit;
+  left: 5%;
+  position: absolute;
+  transition: left 0.5s ease 0s;
+  top: 17%;
+}
+header .top-navigation {
+  display: none;
+}
+header .top-navigation.show-in-mobile {
+  display: block;
+  background: #3b3f42 none repeat scroll 0 0;
+  width: 100%;
+  margin-bottom: 20px;
+}
+header .top-navigation.show-in-mobile ul {
+  display: none;
+}
+header .top-navigation.show-in-mobile ul.language {
+  display: block;
+}
+header .top-navigation.show-in-mobile ul.language li {
+  margin: 0 20px 0 0;
+}
+header .top-navigation.show-in-mobile ul.language li a {
+  color: white;
+}
+header .group-middle .header-right {
+  background: #3b3f42;
+  margin: 0 0 30px 0;
+  width: 100%;
+}
+header .group-middle .header-right .search {
+  width: 100%;
+}
+header .container-herder {
+  position: absolute;
+  transition: right 0.5s ease 0s;
+  right: -80%;
+  width: 72%;
+  z-index: 1;
+  overflow: hidden;
+  padding: 7% 4%;
+  background: #3b3f42 none repeat scroll 0 0;
+  display: none;
+  width: 72%;
+}
+header .container-herder.open {
+  display: block;
+}
+
+nav .navbar-nav {
+  border: medium none;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+nav .navbar-nav li {
+  float: none;
+  margin-bottom: 4%;
+}
+nav .navbar-nav li.open .dropdown-menu {
+  display: none;
+}
+nav .navbar-nav li a {
+  color: white;
+}
+nav .navbar-nav li.dropdown:hover, nav .navbar-nav li.dropdown.open {
+  border-bottom: 0;
+  padding-bottom: 2.6%;
+}
+nav .navbar-nav li.dropdown:hover a, nav .navbar-nav li.dropdown.open a {
+  color: white;
+}
+
+.open-menu .container-herder {
+  right: 0;
+  z-index: 1;
+}
+.open-menu #wrapper {
+  right: 80%;
+}
+.open-menu .logo {
+  left: -80%;
+}
+.open-menu .news-bar {
+  left: -80%;
+}
+.open-menu header .group-middle {
+  padding: 0;
+  width: 100%;
+}
+.open-menu header .group-middle .search input, .open-menu header .group-middle header .group-middle {
+  display: block;
+}
+.open-menu header .top-navigation {
+  display: none;
+}
+.open-menu header .top-navigation.show-in-mobile {
+  display: block;
+}
+.open-menu header .navbar-toggle {
+  background: rgba(0, 0, 0, 0) url("../images/sprite.png") no-repeat scroll 8px -47px;
+  height: 22px;
+  left: 4%;
+  margin-top: 0;
+  padding: 0;
+  position: absolute;
+  top: 37%;
+  width: 14%;
+}
+.open-menu header .navbar-toggle span {
+  display: none;
+}
+
+.news-bar {
+  background: #df2027;
+  display: table;
+  transition: left 0.5s ease 0s;
+  left: 0;
+}
+.news-bar .inner {
+  position: relative;
+}
+.news-bar .latest {
+  display: inline;
+  font-size: 10px;
+  font-size: 0.625rem;
+  margin-right: 1.5%;
+  padding: 0 2% 0 1%;
+  text-align: center;
+  width: auto;
+}
+.news-bar .news {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  display: table-cell;
+  font-size: 0.875rem;
+  line-height: 18px;
+  margin-bottom: 0;
+  margin-left: inherit;
+  margin-right: inherit;
+  margin-top: inherit;
+  padding-left: 4%;
+  padding-right: 65px;
+  vertical-align: middle;
+  padding: 5px 65px 5px 4%;
+  width: 80%;
+}
+.news-bar .news .close {
+  position: absolute;
+  right: 6%;
+  top: 0;
+}
+.news-bar .news p {
+  float: none;
+}
+
+header .group-middle {
+  height: 80px;
+  padding: 0% 3% 0;
+  width: 94%;
+}
+
+header .group-middle .logo {
+  width: 55px;
+  height: auto;
+}
+
+header .group-middle .logo img {
+  height: auto;
+  width: 100%;
+}
+
+.inner-container {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.hidden-ontablets {
+  display: none;
+  padding: 0;
+  visibility: hidden;
+}
+
+.full-width-col-tablets {
+  margin-right: 0;
+  margin-left: 0;
+  width: 100%;
+}
+
+.full-width-col-tablets.right-col {
+  float: none;
+}
+
+.marginRow, .twoo-column-tablets {
+  margin-bottom: 4.7%;
+}
+
+.two-col .one-col {
+  width: 48.6923%;
+  margin-right: 2.61538%;
+}
+.two-col .one-col.last-col {
+  margin-right: 0;
+}
+
+.group-top {
+  display: block;
+}
+
+/*********************
+	ARTICLES TOLO
+*********************/
+.post-tolonews img {
+  width: 100%;
+  height: auto;
+}
+.post-tolonews.medium-column .container-image {
+  display: inline-block;
+  max-width: 42%;
+  vertical-align: middle;
+}
+.post-tolonews.medium-column .title-article {
+  font-size: 0.9375rem;
+}
+.post-tolonews.medium-column .content-article {
+  display: inline-block;
+  line-height: 16px;
+  max-width: 47.1%;
+  padding-left: 13px;
+  vertical-align: middle;
+}
+
+.top-post-tolonews .part-right img {
+  width: 100%;
+  height: auto;
+}
+
+/*********************
+		WATCH
+*********************/
+.box-medium-video .video {
+  padding: 4% 4.8%;
+}
+
+.row-watch-tolo {
+  padding-bottom: 2%;
+  padding-top: 4%;
+}
+.row-watch-tolo .thumbs-watch-tolo h3 {
+  margin-bottom: 2%;
+}
+.row-watch-tolo .thumbs-watch-tolo li.post-tolonews.video-thumbnail {
+  display: inline-block;
+  vertical-align: top;
+  width: 47%;
+  margin-right: 2%;
+}
+.row-watch-tolo .thumbs-watch-tolo li.post-tolonews.video-thumbnail:nth-child(2) {
+  margin-right: 0;
+}
+.row-watch-tolo .video img {
+  width: 100%;
+  height: auto;
+}
+
+/*********************
+		WORLD
+*********************/
+.four-col.twoo-col-ontablets li {
+  width: 48.4%;
+}
+.four-col.twoo-col-ontablets li:nth-child(2) {
+  margin-right: 0;
+}
+
+/*********************
+		SOCIAL
+*********************/
+.row-social-tolo {
+  padding-top: 4%;
+}
+.row-social-tolo li {
+  width: 19.5%;
+  vertical-align: top;
+  text-align: center;
+  margin-right: 0;
+}
+.row-social-tolo li.last {
+  margin-right: 0;
+}
+.row-social-tolo li a {
+  text-align: center;
+  padding-right: 0;
+  height: auto;
+}
+.row-social-tolo li a i {
+  margin: 0 auto;
+  display: block;
+}
+
+.box-photo-right img {
+  width: 100%;
+  height: auto;
+}
+
+/* 2BLOCK INLINE TABLETS
+
+    width: 48.6923%;
+    margin-right: 2.61538%;
+
+    */
+.twoo-column-tablets {
+  width: 48.2923%;
+  margin-top: 0;
+  margin-right: 2.61538%;
+  display: inline-block;
+  vertical-align: top;
+}
+.twoo-column-tablets.last {
+  margin-right: 0;
+}
+.twoo-column-tablets.box.pub {
+  padding: 3% 0;
+  text-align: center;
+  background: whitesmoke;
+  margin-top: 25px;
+}
+
+/***************
+	FOOTER
+****************/
+footer .footer-section {
+  padding: 3% 20px;
+}
+footer .footer-nav {
+  width: 50.8%;
+}
+footer .col-newsletter {
+  width: 45.31313%;
+}
+footer .one-col.media {
+  width: 100%;
+  float: none;
+}
+footer .social-media {
+  display: inline-block;
+  padding-top: 18px;
+  vertical-align: top;
+  margin-bottom: 6%;
+  width: auto;
+}
+
+/***************
+	HEADER
+****************/
+header .group-middle .logo {
+  width: 7%;
+}
+
+nav .navbar-nav li {
+  padding-bottom: 1.6%;
+}
+nav .navbar-nav li a {
+  font-size: 13px;
+  font-size: 0.8125rem;
+}
+
+#wrapper .news-bar .news {
+  padding: 0 65px 0 0%;
+}
+#wrapper .news-bar .news .latest {
+  background: black;
+  float: none;
+  text-transform: uppercase;
+  margin-right: 15px;
+  padding-right: 15px;
+  padding: 2.5%;
+  vertical-align: middle;
+  font-size: 17px;
+  font-size: 1.0625rem;
+  display: inline-block;
+}
+#wrapper .news-bar .news p {
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+}

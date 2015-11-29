@@ -1,0 +1,216 @@
+// -----------------
+// Compass utilities
+// -----------------
+
+// ---------
+// Variables
+// ---------
+
+@import "partials/base";
+@import "partials/mixin";
+
+#wrapper {
+    right: 0;
+    position: absolute;
+    transition: right 0.5s ease 0s;
+    width: 100%;
+}
+header {
+    .navbar-toggle {
+        display: block;
+    }
+    .logo {
+        right: inherit;
+        left: 5%;
+        position: absolute;
+        transition: left 0.5s ease 0s;
+        top: 17%;
+    }
+    .top-navigation {
+        display: none;
+
+        &.show-in-mobile {
+            display: block;
+            background: $grey-dark none repeat scroll 0 0;
+            width: 100%;
+            margin-bottom: 20px;
+
+            ul {
+                display: none;
+
+                &.language {
+                    display: block;
+
+                    li {
+                        margin: 0 20px 0 0;
+
+                        a {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .group-middle {
+        .header-right {
+            background: $grey-dark;
+            margin: 0 0 30px 0;
+            width: 100%;
+
+            .search {
+                width: 100%;
+            }
+        }
+    }
+    .container-herder {
+        position: absolute;
+        transition: right 0.5s ease 0s;
+        right: -80%;
+        width: 72%;
+        z-index: 1;
+        overflow: hidden;
+        padding: 7% 4%;
+        background: $grey-dark none repeat scroll 0 0;
+        display: none;
+        width: 72%;
+
+        &.open {
+            display: block;
+        }
+    }
+}
+nav {
+    .navbar-nav {
+        border: medium none;
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+
+        li {
+            float: none;
+            margin-bottom: 4%;
+
+            &.open {
+                .dropdown-menu {
+                    display: none;
+                }
+            }
+            a {
+                color: $white;
+            }
+            &.dropdown {
+                &:hover, &.open {
+                    border-bottom: 0;
+                    padding-bottom: 2.6%;
+
+                    a {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+.open-menu {
+    .container-herder {
+        right: 0;
+        z-index: 1;
+    }
+    #wrapper {
+        right: 80%;
+    }
+    .logo {
+        left: -80%;
+    }
+    .news-bar {
+        left: -80%;
+    }
+    header {
+        .group-middle {
+            padding:0;
+            width: 100%;
+
+            .search input, header .group-middle {
+                display: block;
+            }
+        }
+        .top-navigation {
+            display: none;
+
+            &.show-in-mobile {
+                display: block;
+            }
+        }
+        .navbar-toggle {
+            background: rgba(0, 0, 0, 0) url("../images/sprite.png") no-repeat scroll 8px -47px;
+            height: 22px;
+            left: 4%;
+            margin-top: 0;
+            padding: 0;
+            position: absolute;
+            top: 37%;
+            width: 14%;
+
+            span {
+                display: none
+            }
+        }
+    }
+}
+.news-bar {
+    background: $red;
+    display: table;
+    transition: left 0.5s ease 0s;
+    left: 0;
+
+    .inner {
+        position: relative;
+    }
+    .latest {
+        display: inline;
+        font-size: 10px;
+        font-size: pxtoem(10);
+        margin-right: 1.5%;
+        padding: 0 2% 0 1%;
+        text-align: center;
+        width: auto;
+    }
+    .news {
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+        display: table-cell;
+        font-size: 0.875rem;
+        line-height: 18px;
+        margin-bottom: 0;
+        margin-left: inherit;
+        margin-right: inherit;
+        margin-top: inherit;
+        padding-left: 4%;
+        padding-right: 65px;
+        vertical-align: middle;
+        padding: 5px 65px 5px 4%;
+        width: 80%;
+
+        .close {
+            position: absolute;
+            right: 6%;
+            top: 0;
+        }
+        p {
+            float: none;
+        }
+    }
+}
+header .group-middle {
+    height: 80px;
+    padding: 0% 3% 0;
+    width: 94%;
+}
+header .group-middle .logo {
+    width: 55px;
+    height: auto;
+}
+header .group-middle .logo img {
+    height: auto;
+    width: 100%;
+}

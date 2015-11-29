@@ -1,0 +1,441 @@
+/* Activate SVG support for IE 9 and old opera */
+/* fonts Variables */
+/************************
+         Color
+*************************/
+/****************************
+				Grey
+****************************/
+/****************************
+				red
+****************************/
+/****************************
+				blue
+****************************/
+/****************************
+				green
+****************************/
+/* function convert px to em */
+/* Activate SVG support for IE 9 and old opera */
+/* fonts Variables */
+/************************
+         Color
+*************************/
+/****************************
+				Grey
+****************************/
+/****************************
+				red
+****************************/
+/****************************
+				blue
+****************************/
+/****************************
+				green
+****************************/
+/* function convert px to em */
+#wrapper {
+  right: 0;
+  position: absolute;
+  transition: right 0.5s ease 0s;
+  width: 100%;
+}
+
+header .navbar-toggle {
+  display: block;
+}
+header .logo {
+  right: inherit;
+  left: 5%;
+  position: absolute;
+  transition: left 0.5s ease 0s;
+  top: 17%;
+}
+header .top-navigation {
+  display: none;
+}
+header .top-navigation.show-in-mobile {
+  display: block;
+  background: #3b3f42 none repeat scroll 0 0;
+  width: 100%;
+  margin-bottom: 20px;
+}
+header .top-navigation.show-in-mobile ul {
+  display: none;
+}
+header .top-navigation.show-in-mobile ul.language {
+  display: block;
+}
+header .top-navigation.show-in-mobile ul.language li {
+  margin: 0 20px 0 0;
+}
+header .top-navigation.show-in-mobile ul.language li a {
+  color: white;
+}
+header .group-middle .header-right {
+  background: #3b3f42;
+  margin: 0 0 30px 0;
+  width: 100%;
+}
+header .group-middle .header-right .search {
+  width: 100%;
+}
+header .container-herder {
+  position: absolute;
+  transition: right 0.5s ease 0s;
+  right: -80%;
+  width: 72%;
+  z-index: 1;
+  overflow: hidden;
+  padding: 7% 4%;
+  background: #3b3f42 none repeat scroll 0 0;
+  display: none;
+  width: 72%;
+}
+header .container-herder.open {
+  display: block;
+}
+
+nav .navbar-nav {
+  border: medium none;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+nav .navbar-nav li {
+  float: none;
+  margin-bottom: 4%;
+}
+nav .navbar-nav li.open .dropdown-menu {
+  display: none;
+}
+nav .navbar-nav li a {
+  color: white;
+}
+nav .navbar-nav li.dropdown:hover, nav .navbar-nav li.dropdown.open {
+  border-bottom: 0;
+  padding-bottom: 2.6%;
+}
+nav .navbar-nav li.dropdown:hover a, nav .navbar-nav li.dropdown.open a {
+  color: white;
+}
+
+.open-menu .container-herder {
+  right: 0;
+  z-index: 1;
+}
+.open-menu #wrapper {
+  right: 80%;
+}
+.open-menu .logo {
+  left: -80%;
+}
+.open-menu .news-bar {
+  left: -80%;
+}
+.open-menu header .group-middle {
+  padding: 0;
+  width: 100%;
+}
+.open-menu header .group-middle .search input, .open-menu header .group-middle header .group-middle {
+  display: block;
+}
+.open-menu header .top-navigation {
+  display: none;
+}
+.open-menu header .top-navigation.show-in-mobile {
+  display: block;
+}
+.open-menu header .navbar-toggle {
+  background: rgba(0, 0, 0, 0) url("../images/sprite.png") no-repeat scroll 8px -47px;
+  height: 22px;
+  left: 4%;
+  margin-top: 0;
+  padding: 0;
+  position: absolute;
+  top: 37%;
+  width: 14%;
+}
+.open-menu header .navbar-toggle span {
+  display: none;
+}
+
+.news-bar {
+  background: #df2027;
+  display: table;
+  transition: left 0.5s ease 0s;
+  left: 0;
+}
+.news-bar .inner {
+  position: relative;
+}
+.news-bar .latest {
+  display: inline;
+  font-size: 10px;
+  font-size: 0.625rem;
+  margin-right: 1.5%;
+  padding: 0 2% 0 1%;
+  text-align: center;
+  width: auto;
+}
+.news-bar .news {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  display: table-cell;
+  font-size: 0.875rem;
+  line-height: 18px;
+  margin-bottom: 0;
+  margin-left: inherit;
+  margin-right: inherit;
+  margin-top: inherit;
+  padding-left: 4%;
+  padding-right: 65px;
+  vertical-align: middle;
+  padding: 5px 65px 5px 4%;
+  width: 80%;
+}
+.news-bar .news .close {
+  position: absolute;
+  right: 6%;
+  top: 0;
+}
+.news-bar .news p {
+  float: none;
+}
+
+header .group-middle {
+  height: 80px;
+  padding: 0% 3% 0;
+  width: 94%;
+}
+
+header .group-middle .logo {
+  width: 55px;
+  height: auto;
+}
+
+header .group-middle .logo img {
+  height: auto;
+  width: 100%;
+}
+
+.inner-container {
+  padding-right: 14px;
+  padding-left: 14px;
+}
+.inner-container.footer-section {
+  padding-right: 14px;
+  padding-left: 14px;
+}
+
+.hidden-onmobile {
+  display: none !important;
+}
+
+.visible-onlymobile {
+  display: block;
+}
+
+.full-width-col-mobile {
+  margin-right: 0;
+  margin-left: 0;
+  width: 100% !important;
+}
+
+.one-col, .two-col, .three-col, .four-col {
+  width: 100% !important;
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
+.row {
+  margin-bottom: 0;
+}
+
+.wrapper {
+  margin-top: 0;
+}
+
+/*********************
+	POST ARTICLE TOLO
+*********************/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.featured {
+  margin-top: 5%;
+}
+
+.load-more-post {
+  padding: 10px 5px 0;
+  clear: both;
+}
+
+/*article tolonews*/
+.post-tolonews {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.post-tolonews .post-date {
+  display: inline;
+}
+.post-tolonews.bar-bottom {
+  border-bottom: 0;
+}
+.post-tolonews .title-article {
+  padding-top: 0;
+}
+.post-tolonews.small-column {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.post-tolonews.small-column img {
+  width: 100%;
+}
+.post-tolonews.small-column .content-article {
+  padding-left: 0;
+  max-width: 47.1% !important;
+}
+.post-tolonews.vertical-bloc .content-article {
+  margin: 0;
+}
+.post-tolonews .container-image {
+  width: 42% !important;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  border: 0 none !important;
+}
+.post-tolonews .content-article {
+  padding-left: 0;
+  display: inline-block;
+  width: 52.1% !important;
+  vertical-align: middle;
+}
+.post-tolonews .content-article h3, .post-tolonews .content-article h4 {
+  font-size: 0.875rem;
+  font-family: "HelveticaNeue-Medium", Arial, sans-serif;
+  line-height: normal;
+  display: inline;
+}
+.post-tolonews .content-article h3 a, .post-tolonews .content-article h4 a {
+  color: #18181b;
+}
+
+.top-post-tolonews img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+.top-post-tolonews .post-date {
+  display: inline;
+}
+
+/*********************
+		WATCH
+*********************/
+.row-watch-tolo {
+  padding-top: 7%;
+}
+.row-watch-tolo .video-thumbnail {
+  margin-bottom: 15px;
+}
+.row-watch-tolo .thumbs-watch-tolo h3 {
+  margin: 2% 0 0 0;
+}
+.row-watch-tolo .content-article p, .row-watch-tolo .content-article .post-date {
+  display: inline;
+}
+.row-watch-tolo .video img {
+  width: 100%;
+  height: auto;
+}
+
+/*********************
+		WORLD
+*********************/
+.four-col.twoo-col-ontablets li {
+  width: 100%;
+}
+.four-col.twoo-col-ontablets li:nth-child(2) {
+  margin-right: 0;
+}
+
+/************************************
+		POST FULL WIDTH MOBILE
+************************************/
+.full-width-col-mobile.post .one-col, .full-width-col-mobile.post .two-col, .full-width-col-mobile.post .three-col, .full-width-col-mobile.post .four-col {
+  width: 100%;
+}
+
+.grey-dark.row {
+  margin: 5% 0 11% 0;
+}
+
+.equal-top-pub {
+  margin-top: 0;
+}
+
+/******************************
+	Weather only MOBILE
+******************************/
+.box-weather {
+  height: 50px;
+  overflow: hidden;
+  margin-top: 0;
+}
+.box-weather .container-image {
+  text-align: left;
+  height: 50px;
+  width: auto;
+  padding: 0 15px;
+}
+.box-weather .container-image img {
+  width: 40px;
+  position: relative;
+  height: auto;
+  margin-top: 7px;
+}
+.box-weather .pays-title {
+  display: block;
+  text-align: center;
+  margin-top: -27px;
+}
+.box-weather .value {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.content-top-post-tolonews {
+  padding-right: 14px;
+  padding-left: 14px;
+}
+.content-top-post-tolonews h2 {
+  font-size: 1.25rem !important;
+  margin: 10px 0 !important;
+}
+
+.news-bar {
+  margin-bottom: 0;
+}
+
+/*******************
+		footer
+*******************/
+footer .col-newsletter {
+  margin-top: 6%;
+}
+footer .media {
+  text-align: center;
+}
+footer .nav-copyright li {
+  text-align: center;
+}
+footer .nav-copyright li:first-child, footer .nav-copyright li:last-child {
+  text-align: center;
+}
+footer .nav-copyright li ul li:after {
+  width: 5px;
+}

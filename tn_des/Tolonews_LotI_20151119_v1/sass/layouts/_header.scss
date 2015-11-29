@@ -1,0 +1,293 @@
+@import "partials/base";
+@import "partials/mixin";
+
+header {
+    width: 100%;
+    height: auto;
+    background: $grey-dark;
+
+    .navigation-sticky.fixed {
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+    }
+    .group-top {
+        width: 100%;
+        background: $grey-dark;
+        padding: 20px 0;
+
+        img {
+            width: 728px;
+            height: 90px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .group-middle {
+        width: 100%;
+        padding: 0.8% 0 0;
+        background: $grey-light;
+        position: relative;
+
+        .logo {
+            width: 10.1%;
+            float: left;
+            margin-right: 3%;
+        }
+        .header-right {
+            float: left;
+            width: 86.7%;
+            margin-bottom: 3%;
+            margin-top: 1%;
+        }
+        .search {
+            width: 36%;
+            height: 35px;
+            float: left;
+            background: $grey-light1;
+
+            input[type="text"] {
+                border: none;
+                height: 35px;
+                padding: 0 0 0 5%;
+                width: 80%;
+                background: transparent;
+                outline: 0;
+                color: $grey-dark1;
+                float: left;
+            }
+            input[type="submit"] {
+                border: none;
+                height: 35px;
+                width: 14%;
+                background: transparent;
+                outline: 0;
+                color: $grey-dark1;
+                float: right;
+                background: rgba(212, 212, 212, 0.4) url(../images/loop.png) center 12px no-repeat;
+                text-indent: -9999px;
+                padding: 0 5% 0 0;
+                cursor: pointer;
+            }
+        }
+        .top-navigation {
+            width: 355px;
+            float: right;
+            font-size: 12px;
+            font-size: pxtoem(12);
+
+            ul {
+                padding-top: 6px;
+                height: 20px;
+                border-right: 1px solid rgba(212, 212, 212, 0.4);
+                display: inline-block;
+
+                + ul {
+                    border: none;
+
+                    li {
+                        float: left;
+                        margin: 0;
+                        margin-left: 21px;
+                    }
+                }
+                li {
+                    float: left;
+                    margin-right: 21px;
+                }
+            }
+        }
+        .watch-link {
+            display: block;
+            color: $red;
+            font-size: 17px;
+            font-size: pxtoem(17);
+        }
+        a.watch-link span {
+            padding: 4px 8px;
+            color: $white;
+            font-size: 13px;
+            font-size: pxtoem(13);
+            background: $red;
+        }
+    }
+}
+.news-bar {
+    position: relative;
+    width: 100%;
+    height: 50px;    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+54,3b3f42+71 */
+    background: $black; /* Old browsers */
+    background: -moz-linear-gradient(left, $black 0%, $black 54%, $grey-dark 71%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, $black 0%, $black 54%, $grey-dark 71%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, $black 0%, $black 54%, $grey-dark 71%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#3b3f42', GradientType=1); /* IE6-9 */
+    color: $white;
+    font-size: 17px;
+    font-size: pxtoem(17);
+    line-height: 50px;
+
+    .latest {
+        background: $black;
+        float: left;
+        text-transform: uppercase;
+        margin-right: 15px;
+        padding-right: 15px;
+    }
+    a {
+        float: left;
+color: $white;
+    }
+    .news {
+        background: $grey-dark;
+        font-family: $HelveticaNeueMedium;
+    }
+    .close {
+        float: right;
+        color: $white;
+        font-family: Arial;
+        font-size: 19px;
+        font-size: pxtoem(19);
+        border: 2px solid;
+        margin-top: 8px;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: block;
+        text-align: center;
+        line-height: 27px;
+    }
+}
+// MENU ///
+
+.navbar-toggle {
+    display: none;
+    position: relative;
+    padding: 0px 5px 5px 30px;
+    margin-top: 25px;
+    background: rgba(0, 0, 0, 0) url("../images/loop.png") no-repeat scroll left top / 20px 20px;
+    border: 0 none;
+    color: $grey-dark1;
+    width: auto;
+    float: right;
+
+    span {
+        border-bottom: 2px solid $grey-dark1;
+        font-family: $HelveticaNeue;
+        font-size: 14px;
+        font-size: pxtoem(14);
+    }
+}
+header {
+    background: $grey-light;
+    padding: 0;
+}
+nav {
+    float: left;
+    width: 86.5%;
+
+    .navbar-nav {
+        li {
+            float: left;
+            margin-right: 1.9%;
+            padding-bottom: 2.6%;
+
+            &:first-child {
+            }
+            &:last-child {
+                margin-right: 0;
+                border-bottom: 0 none;
+
+                a {
+                    font-family: $HelveticaNeueMedium;
+                }
+            }
+            &.open {
+                border-bottom: 3px solid $red;
+                padding-bottom: 19px;
+
+                a {
+                    color: $black;
+                    font-family: $HelveticaNeueBold;
+                }
+            }
+            a {
+                font-size: 17px;
+                font-size: pxtoem(17);
+                font-family: $HelveticaNeueMedium;
+                color: $grey-dark1;
+            }
+            .dropdown-menu {
+                display: none;
+                background: $grey-dark;
+                left: 0;
+                position: absolute;
+                width: 100%;
+                top: 129px;
+                padding: 2% 0;
+                z-index: 1;
+            }
+            &.open {
+                .dropdown-menu {
+                    display: block;
+
+                    li {
+                        margin-bottom: 0;
+                    }
+                    h2 {
+                        font-size: 56px;
+                        font-size: pxtoem(56);
+                        margin-bottom: 4%;
+                        font-family: $HelveticaNeueBold;
+                        letter-spacing: -2px;
+                    }
+                    .post-tolonews {
+                        .container-image {
+                            border: 3px solid $grey-dark;
+                        }
+                        a {
+                            color: $white;
+                            font-family: $HelveticaNeue;
+                            font-size: 14px;
+                            font-size: pxtoem(14);
+                        }
+                        img {
+                            max-width: 100%;
+                            height: auto;
+                        }
+                        .time {
+                            color: $white;
+                        }
+                        &:hover {
+                            background: $grey-dark2;
+
+                            .container-image {
+                                border: 3px solid $red;
+                            }
+                            a {
+                                color: $white;
+                            }
+                        }
+                    }
+                    .list-menu {
+                        li {
+                            float: none;
+                            padding: 0;
+                            margin: 0 0 2%;
+
+                            a {
+                                color: $white;
+                                font-size: 14px;
+                                font-size: pxtoem(14);
+
+                                &:hover {
+                                    color: $grey-light7;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

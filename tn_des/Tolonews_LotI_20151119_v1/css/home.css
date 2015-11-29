@@ -1,0 +1,631 @@
+/* Activate SVG support for IE 9 and old opera */
+/* fonts Variables */
+/************************
+         Color
+*************************/
+/****************************
+				Grey
+****************************/
+/****************************
+				red
+****************************/
+/****************************
+				blue
+****************************/
+/****************************
+				green
+****************************/
+/* function convert px to em */
+/********************************
+	COMMON POST TITLE CATEGORY
+********************************/
+.title-category {
+  letter-spacing: -0.4px;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-family: "HelveticaNeue-Bold", Arial, sans-serif;
+}
+
+/*********************
+	TOP POST TITLE
+*********************/
+.top-post-tolonews {
+  margin-bottom: 5%;
+}
+.top-post-tolonews .title-top-post-tolonews {
+  font-family: "HelveticaNeue-Bold", Arial, sans-serif;
+  font-size: 40px;
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+  margin-bottom: 1.2%;
+}
+.top-post-tolonews p {
+  font-family: "HelveticaNeue-Light", Arial, sans-serif;
+  line-height: 18px;
+  margin-bottom: 3px;
+}
+.top-post-tolonews h3 {
+  font-family: "HelveticaNeue-Bold", Arial, sans-serif;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  margin-top: 14px;
+  margin-bottom: 8px;
+}
+.top-post-tolonews .part-left {
+  display: inline-block;
+  vertical-align: top;
+  width: 31%;
+}
+.top-post-tolonews .part-left li {
+  letter-spacing: -0.2px;
+  font-family: "HelveticaNeue-Medium", Arial, sans-serif;
+  line-height: 18px;
+  margin-bottom: 3%;
+  padding: 0 1% 0 0;
+}
+.top-post-tolonews .part-right {
+  display: inline-block;
+  width: 66.6%;
+  vertical-align: top;
+  margin-left: 1.6%;
+}
+.top-post-tolonews .related-news li a:hover {
+  color: #df2027;
+}
+.top-post-tolonews .related-news li a:hover .fa-angle-right {
+  color: #323031;
+}
+
+/*********************
+	STYLE POST TITLE
+*********************/
+.container-top-post {
+  margin-bottom: 15px;
+}
+.container-top-post.line-grey .view-all-post {
+  margin-top: 3px;
+}
+.container-top-post.no-margin {
+  margin-bottom: 0;
+}
+.container-top-post span {
+  letter-spacing: -0.5px;
+}
+.container-top-post.tabulations-tolo li {
+  display: inline-block;
+  vertical-align: top;
+  border: 0 none;
+  margin-right: 8px;
+}
+.container-top-post.tabulations-tolo li a {
+  padding: 0 0 5px 0;
+  color: #bdbebf;
+}
+.container-top-post.tabulations-tolo li a.active {
+  color: #df2027;
+}
+.container-top-post .title-category, .container-top-post .titleBlock {
+  display: inline-block;
+  vertical-align: middle;
+}
+.container-top-post .view-all-post {
+  float: right;
+}
+
+/*PICTO >*/
+.fa-angle-right {
+  font-weight: bold;
+}
+
+/*DATE*/
+.post-date {
+  font-size: 10px;
+  font-size: 0.625rem;
+  margin-bottom: 1.8%;
+  display: inline-block;
+}
+
+/*********************
+STYLE POST TOLONEWS
+*********************/
+.post-tolonews {
+  font-family: "HelveticaNeue-Light", Arial, sans-serif;
+  padding-bottom: 12px;
+  margin-bottom: 24px;
+  /****************
+  VIDEO WATCH POST
+  ****************/
+}
+.post-tolonews p {
+  text-shadow: 1px 1px 1px rgba(113, 120, 128, 0.15);
+}
+.post-tolonews.small-column {
+  padding-bottom: 0;
+  margin-bottom: 8px;
+}
+.post-tolonews.vertical-bloc {
+  width: auto;
+  padding-right: 0;
+  display: block;
+  margin-bottom: 15px;
+}
+.post-tolonews.vertical-bloc:hover {
+  border-color: #e9e9e9 !important;
+}
+.post-tolonews.vertical-bloc.last {
+  border: 0;
+}
+.post-tolonews.vertical-bloc .container-image {
+  display: inline-block;
+  max-width: 38%;
+}
+.post-tolonews.vertical-bloc .content-article {
+  display: inline-block;
+  margin-left: 3%;
+  margin-top: 10px;
+  vertical-align: top;
+  width: 57.7%;
+}
+.post-tolonews .content-article p {
+  font-family: "HelveticaNeue", Arial, sans-serif;
+  line-height: 18px;
+  margin-bottom: 4px;
+}
+.post-tolonews .title-article {
+  font-size: 20px;
+  font-size: 1.25rem;
+  padding-bottom: 7px;
+  letter-spacing: -0.4px;
+  padding-top: 15px;
+  font-family: "HelveticaNeue-Bold", Arial, sans-serif;
+}
+.post-tolonews.small-column h4 a {
+  font-family: "HelveticaNeue-Medium", Arial, sans-serif;
+  color: #323031;
+}
+.post-tolonews.small-column .container-image {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 42%;
+}
+.post-tolonews.small-column .content-article {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 16px;
+  padding-left: 2.8%;
+  max-width: 51.7%;
+  letter-spacing: -0.5px;
+}
+.post-tolonews.video-thumbnail .container-image {
+  padding-top: 0;
+  position: relative;
+}
+.post-tolonews.video-thumbnail .content-article {
+  padding-top: 0;
+}
+.post-tolonews.video-thumbnail a {
+  display: table;
+  color: white;
+  width: 100%;
+}
+.post-tolonews.video-thumbnail .fa-play {
+  left: 0;
+  position: absolute;
+  top: 0;
+  margin: auto;
+  right: 0;
+  bottom: 0;
+}
+
+/**ELEMENTS HOVER COMMON ON ARTICLE TYPE POST**/
+ul.list-post .post-tolonews .container-image {
+  border: 3px solid white;
+}
+ul.list-post .post-tolonews .container-image img {
+  vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
+}
+ul.list-post .post-tolonews:hover {
+  border-color: #323031;
+}
+ul.list-post .post-tolonews:hover .container-image {
+  border: 3px solid red;
+}
+ul.list-post .post-tolonews:hover .content-article h3 a, ul.list-post .post-tolonews:hover .content-article h4 a {
+  color: #df2027;
+}
+
+/*list-item-widget*/
+.list-item-widget {
+  font-family: "HelveticaNeue-Medium", Arial, sans-serif;
+}
+.list-item-widget li {
+  border-bottom: 1px solid #e9e9e9;
+  line-height: 18px;
+}
+.list-item-widget li > a {
+  display: table;
+}
+.list-item-widget .list-item a:hover {
+  background: #df2027;
+  color: white;
+}
+.list-item-widget .list-item a:hover .number {
+  color: #18181b;
+}
+.list-item-widget .list-item a:hover .content {
+  color: white;
+}
+.list-item-widget .list-item a:hover .content .fa-angle-right {
+  color: #18181b;
+}
+.list-item-widget .number {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 20px;
+  font-size: 1.25rem;
+  display: table-cell;
+  line-height: 55px;
+  padding-right: 18px;
+  padding-left: 14px;
+}
+.list-item-widget span {
+  margin-left: 5px;
+}
+.list-item-widget .content {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 10px 30px 10px 0;
+  color: #18181b;
+}
+
+.box-tolonews-program li {
+  font-family: "HelveticaNeue-Light", Arial, sans-serif;
+  padding: 17px 14px;
+  border-bottom: 1px solid #e9e9e9;
+}
+.box-tolonews-program li .tolo-title {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-family: "HelveticaNeue", Arial, sans-serif;
+  padding-bottom: 5px;
+}
+.box-tolonews-program li .tolo-title .Boldtitle {
+  font-family: "HelveticaNeue-Medium", Arial, sans-serif;
+}
+.box-tolonews-program li .time {
+  font-size: 10px;
+}
+.box-tolonews-program li .tolo-link {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-family: "HelveticaNeue", Arial, sans-serif;
+  display: block;
+  text-align: center;
+  font-family: "HelveticaNeue-Bold", Arial, sans-serif;
+}
+
+/**SOCIAL ROW + BTN **/
+.row-social-tolo {
+  padding: 2% 0 2.5% 0;
+}
+.row-social-tolo h2 {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 19.95px;
+  font-size: 1.24688rem;
+  color: white;
+  font-weight: bold;
+}
+
+.social-media {
+  width: 100%;
+  display: block;
+  padding-top: 18px;
+}
+.social-media li {
+  display: inline-block;
+  width: 19.65%;
+  font-family: "HelveticaNeue-Medium", Arial, sans-serif;
+}
+.social-media li.last {
+  margin-right: 0;
+}
+.social-media li a {
+  font-size: 19px;
+  font-size: 1.1875rem;
+  line-height: 3.125rem;
+  height: 50px;
+  color: white;
+  display: block;
+  vertical-align: top;
+}
+.social-media li a i {
+  margin-right: 10px;
+}
+
+.box-tolo-twitter {
+  font-family: "HelveticaNeue-Light", Arial, sans-serif;
+  line-height: 18px;
+  margin-bottom: 4px;
+}
+.box-tolo-twitter li {
+  border-bottom: 1px solid #e9e9e9;
+  padding: 17px 14px;
+}
+.box-tolo-twitter li .time {
+  font-size: 10px;
+}
+.box-tolo-twitter li .tolo-link {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-family: "HelveticaNeue-Bold", Arial, sans-serif;
+  text-align: center;
+  position: relative;
+}
+.box-tolo-twitter li .follow-tolo {
+  display: block;
+  text-align: center;
+}
+.box-tolo-twitter li .follow-tolo span {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-family: "HelveticaNeue-Bold", Arial, sans-serif;
+  text-align: center;
+  position: relative;
+}
+.box-tolo-twitter li .follow-tolo i {
+  color: #d1ebfb;
+  font-size: 1.4rem;
+  margin-right: 2px;
+  position: relative;
+  top: 2px;
+}
+
+/****************
+CURRENCY RATE
+****************/
+.currency table {
+  width: 100%;
+  border: 0 none;
+}
+.currency table tr:hover {
+  background: #df2027;
+}
+.currency table tr:hover td {
+  cursor: pointer;
+  color: white;
+}
+.currency table td {
+  white-space: nowrap;
+  padding: 15px 0;
+  border-bottom: 1px solid #e9e9e9;
+  vertical-align: middle;
+}
+.currency table td:hover {
+  background: #df2027;
+  color: white;
+}
+.currency table td.first {
+  padding-left: 15px;
+}
+.currency table td.price {
+  font-family: "HelveticaNeue-Medium", Arial, sans-serif;
+  padding-left: 25px;
+  text-align: right;
+}
+.currency table td.arrow {
+  padding-right: 2px;
+  padding-left: 10px;
+}
+.currency table td .arrow-down, .currency table td .arrow-up {
+  display: inline-block;
+  zoom: 1;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+.currency table td .arrow-down {
+  border-top: 10px solid #c20b20;
+}
+.currency table td .arrow-up {
+  border-bottom: 10px solid #558f38;
+}
+
+/****************
+WATCH VIDEO
+****************/
+.row-watch-tolo {
+  padding-bottom: 1%;
+  padding-top: 2%;
+}
+.row-watch-tolo h2 {
+  font-family: "HelveticaNeue-Medium", Arial, sans-serif;
+  color: white;
+}
+.row-watch-tolo .container-top-post {
+  margin-bottom: 20px;
+}
+.row-watch-tolo .thumbs-watch-tolo h3 {
+  color: white;
+  font-family: "HelveticaNeue-Medium", Arial, sans-serif;
+  margin-bottom: 4%;
+}
+
+.content-watch-tolo h3 {
+  margin: 12px 0 5px 0;
+  color: white;
+  font-size: 30px;
+  font-size: 1.875rem;
+  font-family: "HelveticaNeue-Bold", Arial, sans-serif;
+  letter-spacing: -0.75px;
+}
+.content-watch-tolo .video {
+  position: relative;
+}
+.content-watch-tolo .video .play {
+  left: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 93px;
+  margin: auto;
+  height: 93px;
+}
+.content-watch-tolo .info a {
+  color: white;
+}
+
+/****************
+MEDIUM VIDEO
+****************/
+.box-medium-video .video {
+  position: relative;
+  padding: 6% 4.8%;
+}
+.box-medium-video .video .play {
+  left: 38%;
+  position: absolute;
+  top: 35%;
+}
+.box-medium-video .title {
+  font-size: 20px;
+  font-family: "HelveticaNeue-Medium", Arial, sans-serif;
+  font-size: 1.25rem;
+  padding-left: 5%;
+  margin-bottom: 1%;
+}
+.box-medium-video .text-vds {
+  padding: 0 5% 5%;
+  font-family: "HelveticaNeue-Light", Arial, sans-serif;
+  line-height: 18px;
+}
+
+/****************
+PHOTO SLIDER
+****************/
+.box-photo-right .title-description {
+  font-size: 1.875rem;
+  margin-top: 12px;
+  padding-bottom: 15px;
+  font-family: "HelveticaNeue-Bold", Arial, sans-serif;
+}
+.box-photo-right .thumbs-photo {
+  margin-top: 15px;
+}
+.box-photo-right .thumbs-photo .thumbs-medium-column {
+  display: inline-block;
+  font-family: "HelveticaNeue-Medium", Arial, sans-serif;
+  cursor: pointer;
+  padding-right: 2.5%;
+  width: 31.1%;
+}
+.box-photo-right .thumbs-photo .thumbs-medium-column img {
+  max-width: 100%;
+  height: auto;
+}
+.box-photo-right .thumbs-photo .thumbs-medium-column .title-thumb {
+  display: block;
+  margin-top: 10px;
+}
+.box-photo-right .thumbs-photo .thumbs-medium-column.last {
+  padding: 0;
+}
+
+/****************
+BOX WEATHER
+****************/
+.box-weather {
+  margin-top: 8%;
+}
+.box-weather h3 {
+  color: #0878b7;
+}
+.box-weather .container-image {
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 290px;
+  background: url(../images/image-meteo.jpg) no-repeat transparent;
+  background-size: cover;
+}
+.box-weather .container-image:before {
+  content: "";
+  background: #5684b8;
+  position: absolute;
+  opacity: 0.8;
+  width: 100%;
+  height: 290px;
+  top: 0;
+  left: 0;
+}
+.box-weather .container-image .picto {
+  position: relative;
+  padding-top: 64px;
+}
+.box-weather .container-image .txt {
+  position: relative;
+  line-height: 20px;
+  padding-top: 10px;
+}
+.box-weather .container-image .txt span {
+  display: block;
+}
+.box-weather .container-image .pays-title {
+  font-size: 20px;
+  font-size: 1.25rem;
+  position: relative;
+  font-family: "HelveticaNeue-Bold", Arial, sans-serif;
+  margin-bottom: 1.5%;
+}
+.box-weather .container-image p {
+  font-size: 20px;
+  font-size: 1.25rem;
+  position: relative;
+  padding: 10px;
+}
+
+/****************
+BOX PUB
+****************/
+.box.pub {
+  padding: 1.6%;
+  text-align: center;
+}
+
+/****************
+BOX VOTE 
+****************/
+.link-square {
+  border: 1px solid #18181b;
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  width: 40%;
+  font-family: "HelveticaNeue-Medium", Arial, sans-serif;
+  cursor: pointer;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+.link-square.red {
+  border-color: #df2027;
+}
+.link-square.button {
+  padding: 7px;
+  width: 49%;
+  background: 0 none;
+  height: 36px;
+}
+
+.box-vote {
+  padding: 17px 14px;
+  margin-bottom: 10%;
+}
+.box-vote .title-category {
+  line-height: normal;
+}
+.box-vote ul li {
+  padding: 0;
+  border: 0;
+  margin: 3.55% 0;
+}
